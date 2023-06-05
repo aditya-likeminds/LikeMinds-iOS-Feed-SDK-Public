@@ -1,0 +1,554 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name LikeMindsFeed
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import Alamofire
+import Foundation
+import Swift
+import SwiftUI
+import SystemConfiguration
+import UIKit
+import _Concurrency
+import _StringProcessing
+import os
+public struct GetCommentResponse : Swift.Codable {
+  public let comment: LikeMindsFeed.Comment?
+  public let users: [Swift.String : LikeMindsFeed.User]?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public class GetTaggingListRequest : Swift.Encodable {
+  public init(searchName: Swift.String)
+  public func page(_ page: Swift.Int) -> LikeMindsFeed.GetTaggingListRequest
+  public func pageSize(_ pageSize: Swift.Int) -> LikeMindsFeed.GetTaggingListRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public class GetRepliesOnCommentRequest : Swift.Encodable {
+  public init(postId: Swift.String, commentId: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public class GetMemberStateRequest : Swift.Encodable {
+  public init(memberId: Swift.String, communityId: Swift.Int)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public class DecodeUrlRequest : Swift.Encodable {
+  public init(_ link: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct GetFeedRoomRequest : Swift.Encodable {
+  public init(feedroomId: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public class GetFeedPostRequest : Swift.Encodable {
+  public var page: Swift.Int
+  public var pageSize: Swift.Int
+  public init(page: Swift.Int)
+  public func pageSize(_ pageSize: Swift.Int) -> LikeMindsFeed.GetFeedPostRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct GetPostResponse : Swift.Decodable {
+  public let post: LikeMindsFeed.Post?
+  public let users: [Swift.String : LikeMindsFeed.User]?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct LikePostRequest : Swift.Encodable {
+  public let postId: Swift.String
+  public init(postId: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public protocol LikeMindsCallback : AnyObject {
+  func loginRequiredCallback()
+}
+extension LikeMindsFeed.LikeMindsCallback {
+  public func loginRequiredCallback()
+}
+@_hasMissingDesignatedInitializers public class LMClient {
+  public static let shared: LikeMindsFeed.LMClient
+  public func getBranding(request: LikeMindsFeed.BrandingRequest, response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.BrandingResponse>?)
+  @objc deinit
+}
+public class GetPostRequest : Swift.Encodable {
+  public init(postId: Swift.String)
+  public func page(_ page: Swift.Int) -> LikeMindsFeed.GetPostRequest
+  public func pageSize(_ pageSize: Swift.Int) -> LikeMindsFeed.GetPostRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public class GetFeedNotificationRequest : Swift.Encodable {
+  public init(page: Swift.Int, pageSize: Swift.Int = 20)
+  public func pageSize(_ pageSize: Swift.Int) -> LikeMindsFeed.GetFeedNotificationRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public class DeleteCommentRequest : Swift.Encodable {
+  final public let postId: Swift.String
+  final public let commentId: Swift.String
+  public var reason: Swift.String?
+  public init(postId: Swift.String, commentId: Swift.String)
+  public func deleteReason(_ reason: Swift.String?) -> LikeMindsFeed.DeleteCommentRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct ServiceAPI {
+  public static let bucketURL: Swift.String
+  public static let awsPoolIdCognito: Swift.String
+  public static let secretAccessKey: Swift.String
+  public static let accessKey: Swift.String
+}
+public class GetReportTagRequest : Swift.Encodable {
+  public init(_ type: Swift.Int)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct GetPostLikeResponse : Swift.Codable {
+  public let likes: [LikeMindsFeed.Like]?
+  public let totalCount: Swift.Int?
+  public let users: [Swift.String : LikeMindsFeed.User]
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Comment : Swift.Codable {
+  public let id: Swift.String, userId: Swift.String
+  public let postId: Swift.String?
+  public let commentsCount: Swift.Int?, createdAt: Swift.Int?, level: Swift.Int?, likesCount: Swift.Int?
+  public let isEdited: Swift.Bool?, isLiked: Swift.Bool?
+  public let menuItems: [LikeMindsFeed.MenuItem]?
+  public let replies: [LikeMindsFeed.Comment]?
+  public let text: Swift.String?
+  public let updatedAt: Swift.Int?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public class GetCommentRequest : Swift.Encodable {
+  public init(postId: Swift.String, commentId: Swift.String)
+  public func page(_ page: Swift.Int) -> LikeMindsFeed.GetCommentRequest
+  public func pageSize(_ pageSize: Swift.Int) -> LikeMindsFeed.GetCommentRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct LMResponse<T> : Swift.Decodable where T : Swift.Decodable {
+  public let success: Swift.Bool
+  public let errorMessage: Swift.String?
+  public let data: T?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct NoData : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct RegisterDeviceResponse : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol LMCallback : AnyObject {
+  func loginRequiredCallback()
+}
+extension LikeMindsFeed.LMCallback {
+  public func loginRequiredCallback()
+}
+@_hasMissingDesignatedInitializers final public class FeedTokenManager {
+  public static let shared: LikeMindsFeed.FeedTokenManager
+  weak final public var lmCallback: LikeMindsFeed.LMCallback?
+  @objc deinit
+}
+public struct GetFeedPostResponse : Swift.Decodable {
+  public let post: [LikeMindsFeed.Post]?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetFeedOfFeedRoomResponse : Swift.Decodable {
+  public let posts: [LikeMindsFeed.Post]?
+  public let users: [LikeMindsFeed.LikedUser]
+  public init(from decoder: Swift.Decoder) throws
+}
+public class GetCommentLikesRequest : Swift.Encodable {
+  public var postId: Swift.String
+  public var commentId: Swift.String
+  public var page: Swift.Int
+  public var pageSize: Swift.Int
+  public init(postId: Swift.String, commentId: Swift.String)
+  public func page(_ page: Swift.Int) -> LikeMindsFeed.GetCommentLikesRequest
+  public func pageSize(_ pageSize: Swift.Int) -> LikeMindsFeed.GetCommentLikesRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public class InitiateUserRequest : Swift.Encodable {
+  public init(_ apiKey: Swift.String)
+  public func isGuest(_ isGuest: Swift.Bool) -> LikeMindsFeed.InitiateUserRequest
+  public func userName(_ userName: Swift.String) -> LikeMindsFeed.InitiateUserRequest
+  public func userUniqueId(_ userUniqueId: Swift.String) -> LikeMindsFeed.InitiateUserRequest
+  public func page(_ page: Swift.Int) -> LikeMindsFeed.InitiateUserRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public class LikeCommentRequest : Swift.Encodable {
+  public var postId: Swift.String
+  public var commentId: Swift.String
+  public init(postId: Swift.String, commentId: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct InitiateUserResponse : Swift.Decodable {
+  public let accessToken: Swift.String
+  public let appAccess: Swift.Bool?
+  public let community: LikeMindsFeed.Community?
+  public let hasAnswers: Swift.Bool?
+  public let refreshToken: Swift.String?
+  public let user: LikeMindsFeed.User?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct InitialUser : Swift.Decodable {
+  public let user: LikeMindsFeed.User
+  public let community: LikeMindsFeed.Community
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SDKClientInfo : Swift.Codable {
+  public let community: Swift.Int
+  public let userUniqueID: Swift.String, user: Swift.String
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum ReportEntityType : Swift.Int, Swift.Encodable {
+  case post
+  case comment
+  case reply
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public class ReportRequest : Swift.Encodable {
+  public init(_ entityId: Swift.String)
+  public func entityType(_ entityType: LikeMindsFeed.ReportEntityType) -> LikeMindsFeed.ReportRequest
+  public func tagId(_ tagId: Swift.Int) -> LikeMindsFeed.ReportRequest
+  public func entityCreatorId(_ entityCreatorId: Swift.String) -> LikeMindsFeed.ReportRequest
+  public func reason(_ reason: Swift.String) -> LikeMindsFeed.ReportRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct Community : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public class DeletePostRequest : Swift.Encodable {
+  final public let postId: Swift.String
+  public var reason: Swift.String?
+  public init(postId: Swift.String)
+  public func deleteReason(_ reason: Swift.String?) -> LikeMindsFeed.DeletePostRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public class RegisterDeviceRequest : Swift.Encodable {
+  public init(_ deviceId: Swift.String, token: Swift.String)
+  public func userId(_ userId: Swift.String) -> LikeMindsFeed.RegisterDeviceRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public class Fonts {
+  public init(regular: Swift.String, medium: Swift.String, bold: Swift.String)
+  @objc deinit
+}
+public class AddPostRequest : Swift.Encodable {
+  public init()
+  public func attachments(_ attachments: [LikeMindsFeed.Attachment]) -> LikeMindsFeed.AddPostRequest
+  public func text(_ text: Swift.String?) -> LikeMindsFeed.AddPostRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@_hasMissingDesignatedInitializers public class LMLogger {
+  @objc deinit
+}
+public class BrandingRequest : Swift.Encodable {
+  public var communityId: Swift.Int
+  public init(communityId: Swift.Int)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct MenuItem : Swift.Codable {
+  public let id: Swift.Int
+  public let title: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetTaggingListResponse : Swift.Codable {
+  public let members: [LikeMindsFeed.User]?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public class OGTags : Swift.Codable {
+  public var title: Swift.String?, image: Swift.String?, description: Swift.String?, url: Swift.String?
+  required public init(from decoder: Swift.Decoder) throws
+  public init()
+  public func title(_ title: Swift.String) -> LikeMindsFeed.OGTags
+  public func image(_ image: Swift.String) -> LikeMindsFeed.OGTags
+  public func description(_ description: Swift.String) -> LikeMindsFeed.OGTags
+  public func url(_ url: Swift.String) -> LikeMindsFeed.OGTags
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct DecodeUrlResponse : Swift.Decodable {
+  public let oGTags: LikeMindsFeed.OGTags?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct Like : Swift.Codable {
+  public let id: Swift.String
+  public let createdAt: Swift.Int?, updatedAt: Swift.Int?
+  public let userId: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public class LMChatClient {
+  public init(apiKey: Swift.String)
+  public func domainUrl(_ domain: Swift.String) -> LikeMindsFeed.LMChatClient
+  public func deviceUUID(_ deviceUUID: Swift.String) -> LikeMindsFeed.LMChatClient
+  public func callback(_ callback: LikeMindsFeed.LikeMindsCallback) -> LikeMindsFeed.LMChatClient
+  @objc deinit
+}
+public class GetFeedRequest : Swift.Encodable {
+  public init(page: Swift.Int)
+  public func pageSize(_ pageSize: Swift.Int) -> LikeMindsFeed.GetFeedRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct LikedUser : Swift.Codable {
+  public let userId: Swift.Int
+  public let user: LikeMindsFeed.User?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct BrandingResponse : Swift.Decodable, Swift.Encodable {
+  public var basicColor: LikeMindsFeed.BasicColor?
+  public var advanceColor: LikeMindsFeed.AdvanceColor?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct BasicColor : Swift.Decodable, Swift.Encodable {
+  public var basicColor: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct AdvanceColor : Swift.Decodable, Swift.Encodable {
+  public var headerColor: Swift.String?
+  public var buttonIconsColour: Swift.String?
+  public var textLinksColour: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum MemberRightState : Swift.Int, Swift.Codable {
+  case unknown
+  case createChatRooms
+  case createPolls
+  case createEvents
+  case respondsInChatRoom
+  case inviteMemberFromPrivateLink
+  case autoApproveCreatedChatroom
+  case createSecretChatRoom
+  case directMessage
+  case noClearYet
+  case createPost
+  case commentOrReplyOnPost
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [LikeMindsFeed.MemberRightState]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [LikeMindsFeed.MemberRightState] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct MemberRight : Swift.Codable {
+  public let id: Swift.Int?
+  public let isLocked: Swift.Bool?, isSelected: Swift.Bool?
+  public let state: LikeMindsFeed.MemberRightState?
+  public let title: Swift.String?
+  public let subTitle: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class LMFeedClient {
+  public static let shared: LikeMindsFeed.LMFeedClient
+  @objc deinit
+}
+public struct GetFeedOfFeedRoomRequest : Swift.Encodable {
+  public init(feedroomId: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct Post : Swift.Decodable {
+  public let id: Swift.String
+  public let attachments: [LikeMindsFeed.Attachment]?
+  public let commentsCount: Swift.Int?, communityID: Swift.Int?, createdAt: Swift.Int?
+  public let isPinned: Swift.Bool?, isSaved: Swift.Bool?, isEdited: Swift.Bool?, isDeleted: Swift.Bool?
+  public let isLiked: Swift.Bool?
+  public let likesCount: Swift.Int?
+  public let menuItems: [LikeMindsFeed.MenuItem]?
+  public let text: Swift.String?
+  public let heading: Swift.String?
+  public let updatedAt: Swift.Int?
+  public let userID: Swift.String?, deletedBy: Swift.String?, deleteReason: Swift.String?
+  public let replies: [LikeMindsFeed.Comment]?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct GetReportTagResponse : Swift.Decodable {
+  public let reportTags: [LikeMindsFeed.ReportTag]?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ReportTag : Swift.Decodable {
+  public let id: Swift.Int?
+  public let name: Swift.String?
+  public init(from decoder: Swift.Decoder) throws
+}
+public enum MemberState : Swift.Int, Swift.Codable {
+  case admin
+  case member
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public struct GetMemberStateResponse : Swift.Codable {
+  public let createdAt: Swift.String?
+  public let editRequired: Swift.Bool
+  public let member: LikeMindsFeed.User?
+  public let memberRights: [LikeMindsFeed.MemberRight]
+  public let state: Swift.Int?
+  public let toolState: LikeMindsFeed.MemberState?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public class AttachmentMeta : Swift.Codable {
+  public var attachmentUrl: Swift.String?
+  public var format: Swift.String?, name: Swift.String?
+  public var pageCount: Swift.Int?, duration: Swift.Int?, size: Swift.Int?
+  public var ogTags: LikeMindsFeed.OGTags?
+  public init()
+  required public init(from decoder: Swift.Decoder) throws
+  public func attachmentUrl(_ attachmentUrl: Swift.String) -> LikeMindsFeed.AttachmentMeta
+  public func pageCount(_ pageCount: Swift.Int) -> LikeMindsFeed.AttachmentMeta
+  public func format(_ format: Swift.String) -> LikeMindsFeed.AttachmentMeta
+  public func name(_ name: Swift.String) -> LikeMindsFeed.AttachmentMeta
+  public func duration(_ duration: Swift.Int) -> LikeMindsFeed.AttachmentMeta
+  public func size(_ size: Swift.Int) -> LikeMindsFeed.AttachmentMeta
+  public func ogTags(_ ogTags: LikeMindsFeed.OGTags) -> LikeMindsFeed.AttachmentMeta
+  public func attachmentMetaData() -> LikeMindsFeed.AttachmentMeta
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct GetCommentsLikeResponse : Swift.Codable {
+  public let likes: [LikeMindsFeed.Like]
+  public let totalLikes: Swift.Int
+  public let users: [Swift.String : LikeMindsFeed.User]?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public class ReplyOnCommentRequest : Swift.Encodable {
+  public init(postId: Swift.String, text: Swift.String, commentId: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public typealias LMFeedClientResponse<T> = (LikeMindsFeed.LMResponse<T>) -> (Swift.Void) where T : Swift.Decodable
+extension LikeMindsFeed.LMFeedClient {
+  public func initiateUser(request: LikeMindsFeed.InitiateUserRequest, response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.InitiateUserResponse>?)
+  public func getFeeds(_ request: LikeMindsFeed.GetFeedRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetFeedResponse>?)
+  public func addPost(_ request: LikeMindsFeed.AddPostRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetPostResponse>?)
+  public func getPost(_ request: LikeMindsFeed.GetPostRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetPostResponse>?)
+  public func getPostLikes(_ request: LikeMindsFeed.GetPostLikesRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetPostLikeResponse>?)
+  public func deletePost(_ request: LikeMindsFeed.DeletePostRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.NoData>?)
+  public func deleteComment(_ request: LikeMindsFeed.DeleteCommentRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.NoData>?)
+  public func likePost(_ request: LikeMindsFeed.LikePostRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.NoData>?)
+  public func savePost(_ request: LikeMindsFeed.SavePostRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.NoData>?)
+  public func addComment(_ request: LikeMindsFeed.AddCommentRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetCommentResponse>?)
+  public func replyOnComment(_ request: LikeMindsFeed.ReplyOnCommentRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetCommentResponse>?)
+  public func getComment(_ request: LikeMindsFeed.GetCommentRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetCommentResponse>?)
+  public func getRepliesOnComment(_ request: LikeMindsFeed.GetRepliesOnCommentRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetRepliesResponse>?)
+  public func getCommentLikes(_ request: LikeMindsFeed.GetCommentLikesRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetCommentsLikeResponse>?)
+  public func likeComment(_ request: LikeMindsFeed.LikeCommentRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.NoData>?)
+  public func getMemberState(_ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetMemberStateResponse>?)
+  public func getFeedOfFeedRoom(_ request: LikeMindsFeed.GetFeedOfFeedRoomRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetFeedOfFeedRoomResponse>?)
+  public func getFeedNotifications(_ request: LikeMindsFeed.GetFeedNotificationRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetFeedNotificationResponse>?)
+  public func report(_ request: LikeMindsFeed.ReportRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.NoData>?)
+  public func decodeUrl(_ request: LikeMindsFeed.DecodeUrlRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.DecodeUrlResponse>?)
+  public func getReportTags(_ request: LikeMindsFeed.GetReportTagRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetReportTagResponse>?)
+  public func getTaggingList(_ request: LikeMindsFeed.GetTaggingListRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetTaggingListResponse>?)
+  public func registerDevice(request: LikeMindsFeed.RegisterDeviceRequest, response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.RegisterDeviceResponse>?)
+  public func logout(response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.NoData>?)
+}
+public struct GetFeedResponse : Swift.Decodable {
+  public let posts: [LikeMindsFeed.Post]?
+  public let users: [Swift.String : LikeMindsFeed.User]?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct SavePostRequest : Swift.Encodable {
+  public init(postId: Swift.String)
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public enum AttachmentType : Swift.Int, Swift.Encodable {
+  case image
+  case video
+  case doc
+  case link
+  case audio
+  case unknown
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public class Attachment : Swift.Codable {
+  public var attachmentType: LikeMindsFeed.AttachmentType?
+  public var attachmentMeta: LikeMindsFeed.AttachmentMeta?
+  required public init(from decoder: Swift.Decoder) throws
+  public init()
+  public func attachmentMeta(_ attachmentMeta: LikeMindsFeed.AttachmentMeta) -> LikeMindsFeed.Attachment
+  public func attachmentType(_ attachmentType: LikeMindsFeed.AttachmentType) -> LikeMindsFeed.Attachment
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct User : Swift.Codable {
+  public let id: Swift.Int?
+  public let imageUrl: Swift.String?, name: Swift.String?, organisationName: Swift.String?, userUniqueId: Swift.String?
+  public let isGuest: Swift.Bool
+  public let isDeleted: Swift.Bool?
+  public let isOwner: Swift.Bool?
+  public let customTitle: Swift.String?
+  public let state: Swift.Int?, updatedAt: Swift.Int?
+  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct GetFeedNotificationResponse : Swift.Decodable {
+  public init(from decoder: Swift.Decoder) throws
+}
+public class AddCommentRequest : Swift.Encodable {
+  public init(postId: Swift.String, text: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public struct GetRepliesResponse : Swift.Codable {
+  public let comment: LikeMindsFeed.Comment
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public class GetPostLikesRequest : Swift.Encodable {
+  public init(postId: Swift.String)
+  public func page(_ page: Swift.Int) -> LikeMindsFeed.GetPostLikesRequest
+  public func pageSize(_ pageSize: Swift.Int) -> LikeMindsFeed.GetPostLikesRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+extension LikeMindsFeed.ReportEntityType : Swift.Equatable {}
+extension LikeMindsFeed.ReportEntityType : Swift.Hashable {}
+extension LikeMindsFeed.ReportEntityType : Swift.RawRepresentable {}
+extension LikeMindsFeed.MemberRightState : Swift.RawRepresentable {}
+extension LikeMindsFeed.MemberRightState : Swift.CaseIterable {}
+extension LikeMindsFeed.MemberRightState : Swift.Equatable {}
+extension LikeMindsFeed.MemberRightState : Swift.Hashable {}
+extension LikeMindsFeed.MemberState : Swift.Equatable {}
+extension LikeMindsFeed.MemberState : Swift.Hashable {}
+extension LikeMindsFeed.MemberState : Swift.RawRepresentable {}
+extension LikeMindsFeed.AttachmentType : Swift.Equatable {}
+extension LikeMindsFeed.AttachmentType : Swift.Hashable {}
+extension LikeMindsFeed.AttachmentType : Swift.RawRepresentable {}
