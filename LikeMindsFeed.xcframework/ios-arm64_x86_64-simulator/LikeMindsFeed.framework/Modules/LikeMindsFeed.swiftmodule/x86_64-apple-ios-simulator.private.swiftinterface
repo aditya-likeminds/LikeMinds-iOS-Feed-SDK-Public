@@ -34,6 +34,12 @@ public class GetMemberStateRequest : Swift.Encodable {
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
+public struct EditCommentResponse : Swift.Codable {
+  public let comment: LikeMindsFeed.Comment?
+  public let users: [Swift.String : LikeMindsFeed.User]?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
 public class DecodeUrlRequest : Swift.Encodable {
   public init(_ link: Swift.String)
   @objc deinit
@@ -55,6 +61,12 @@ public struct GetPostResponse : Swift.Decodable {
   public let post: LikeMindsFeed.Post?
   public let users: [Swift.String : LikeMindsFeed.User]?
   public init(from decoder: Swift.Decoder) throws
+}
+public class EditCommentRequest : Swift.Encodable {
+  public init(postId: Swift.String, commentId: Swift.String)
+  public func text(_ text: Swift.String) -> LikeMindsFeed.EditCommentRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public struct LikePostRequest : Swift.Encodable {
   public let postId: Swift.String
@@ -99,6 +111,11 @@ public struct ServiceAPI {
   public static let awsPoolIdCognito: Swift.String
   public static let secretAccessKey: Swift.String
   public static let accessKey: Swift.String
+}
+public struct EditPostResponse : Swift.Decodable {
+  public let post: LikeMindsFeed.Post?
+  public let users: [Swift.String : LikeMindsFeed.User]?
+  public init(from decoder: Swift.Decoder) throws
 }
 public class GetReportTagRequest : Swift.Encodable {
   public init(_ type: Swift.Int)
@@ -240,6 +257,13 @@ public class DeletePostRequest : Swift.Encodable {
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
+public class EditPostRequest : Swift.Encodable {
+  public init(_ postId: Swift.String)
+  public func attachments(_ attachments: [LikeMindsFeed.Attachment]) -> LikeMindsFeed.EditPostRequest
+  public func text(_ text: Swift.String?) -> LikeMindsFeed.EditPostRequest
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
 public class RegisterDeviceRequest : Swift.Encodable {
   public init(_ deviceId: Swift.String, token: Swift.String)
   public func userId(_ userId: Swift.String) -> LikeMindsFeed.RegisterDeviceRequest
@@ -359,10 +383,38 @@ public enum MemberRightState : Swift.Int, Swift.Codable {
     get
   }
 }
+public enum ManagerRightState : Swift.Int, Swift.Codable {
+  case unknown
+  case moderateChatRooms
+  case moderateMembers
+  case editCommunityDetails
+  case viewMemberContactInfo
+  case addCommunityManager
+  case moderateDMSetting
+  case moderateFeedAndComment
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [LikeMindsFeed.ManagerRightState]
+  public typealias RawValue = Swift.Int
+  public static var allCases: [LikeMindsFeed.ManagerRightState] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public struct MemberRight : Swift.Codable {
   public let id: Swift.Int?
   public let isLocked: Swift.Bool?, isSelected: Swift.Bool?
   public let state: LikeMindsFeed.MemberRightState?
+  public let title: Swift.String?
+  public let subTitle: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ManagerRight : Swift.Codable {
+  public let id: Swift.Int?
+  public let isLocked: Swift.Bool?, isSelected: Swift.Bool?
+  public let state: LikeMindsFeed.ManagerRightState?
   public let title: Swift.String?
   public let subTitle: Swift.String?
   public func encode(to encoder: Swift.Encoder) throws
@@ -413,6 +465,7 @@ public struct GetMemberStateResponse : Swift.Codable {
   public let createdAt: Swift.String?
   public let editRequired: Swift.Bool
   public let member: LikeMindsFeed.User?
+  public let managerRights: [LikeMindsFeed.ManagerRight]
   public let memberRights: [LikeMindsFeed.MemberRight]
   public let state: Swift.Int?
   public let toolState: LikeMindsFeed.MemberState?
@@ -443,6 +496,11 @@ public struct GetCommentsLikeResponse : Swift.Codable {
   public let users: [Swift.String : LikeMindsFeed.User]?
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
+}
+public class PinPostRequest : Swift.Encodable {
+  public init(postId: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public class ReplyOnCommentRequest : Swift.Encodable {
   public init(postId: Swift.String, text: Swift.String, commentId: Swift.String)
@@ -475,6 +533,9 @@ extension LikeMindsFeed.LMFeedClient {
   public func getTaggingList(_ request: LikeMindsFeed.GetTaggingListRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetTaggingListResponse>?)
   public func registerDevice(request: LikeMindsFeed.RegisterDeviceRequest, response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.RegisterDeviceResponse>?)
   public func logout(response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.NoData>?)
+  public func pinPost(_ request: LikeMindsFeed.PinPostRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.NoData>?)
+  public func editPost(_ request: LikeMindsFeed.EditPostRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.EditPostResponse>?)
+  public func editComment(_ request: LikeMindsFeed.EditCommentRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.EditCommentResponse>?)
 }
 public struct GetFeedResponse : Swift.Decodable {
   public let posts: [LikeMindsFeed.Post]?
@@ -546,6 +607,10 @@ extension LikeMindsFeed.MemberRightState : Swift.RawRepresentable {}
 extension LikeMindsFeed.MemberRightState : Swift.CaseIterable {}
 extension LikeMindsFeed.MemberRightState : Swift.Equatable {}
 extension LikeMindsFeed.MemberRightState : Swift.Hashable {}
+extension LikeMindsFeed.ManagerRightState : Swift.RawRepresentable {}
+extension LikeMindsFeed.ManagerRightState : Swift.CaseIterable {}
+extension LikeMindsFeed.ManagerRightState : Swift.Equatable {}
+extension LikeMindsFeed.ManagerRightState : Swift.Hashable {}
 extension LikeMindsFeed.MemberState : Swift.Equatable {}
 extension LikeMindsFeed.MemberState : Swift.Hashable {}
 extension LikeMindsFeed.MemberState : Swift.RawRepresentable {}
