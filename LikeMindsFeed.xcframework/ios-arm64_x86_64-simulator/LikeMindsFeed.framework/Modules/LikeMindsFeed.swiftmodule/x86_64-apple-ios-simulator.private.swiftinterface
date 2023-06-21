@@ -91,9 +91,9 @@ public class GetPostRequest : Swift.Encodable {
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
-public class GetFeedNotificationRequest : Swift.Encodable {
+public class GetNotificationFeedRequest : Swift.Encodable {
   public init(page: Swift.Int, pageSize: Swift.Int = 20)
-  public func pageSize(_ pageSize: Swift.Int) -> LikeMindsFeed.GetFeedNotificationRequest
+  public func pageSize(_ pageSize: Swift.Int) -> LikeMindsFeed.GetNotificationFeedRequest
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -105,6 +105,10 @@ public class DeleteCommentRequest : Swift.Encodable {
   public func deleteReason(_ reason: Swift.String?) -> LikeMindsFeed.DeleteCommentRequest
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+}
+public struct GetUnreadNotificationCountResponse : Swift.Decodable {
+  public let count: Swift.Int?
+  public init(from decoder: Swift.Decoder) throws
 }
 public struct ServiceAPI {
   public static let bucketURL: Swift.String
@@ -161,18 +165,35 @@ public struct RegisterDeviceResponse : Swift.Decodable {
   public init(from decoder: Swift.Decoder) throws
 }
 public protocol LMCallback : AnyObject {
-  func loginRequiredCallback()
+  func login()
 }
 extension LikeMindsFeed.LMCallback {
-  public func loginRequiredCallback()
+  public func login()
 }
 @_hasMissingDesignatedInitializers final public class FeedTokenManager {
-  public static let shared: LikeMindsFeed.FeedTokenManager
-  weak final public var lmCallback: LikeMindsFeed.LMCallback?
+  public static var shared: LikeMindsFeed.FeedTokenManager {
+    get
+  }
+  final public func lmCallback(_ lmCallback: LikeMindsFeed.LMCallback) -> LikeMindsFeed.FeedTokenManager
   @objc deinit
 }
 public struct GetFeedPostResponse : Swift.Decodable {
   public let post: [LikeMindsFeed.Post]?
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct ActivityEntityData : Swift.Codable {
+  public let id: Swift.String?
+  public let attachments: [LikeMindsFeed.Attachment]?
+  public let commentsCount: Swift.Int?, communityID: Swift.Int?, createdAt: Swift.Int?
+  public let heading: Swift.String?
+  public let isEdited: Swift.Bool?, isLiked: Swift.Bool?, isPinned: Swift.Bool?, isSaved: Swift.Bool?
+  public let likesCount: Swift.Int?
+  public let menuItems: [LikeMindsFeed.MenuItem]?
+  public let text: Swift.String?
+  public let updatedAt: Swift.Int?
+  public let userID: Swift.String?, uuid: Swift.String?, deleteReason: Swift.String?, deletedBy: Swift.String?
+  public let isDeleted: Swift.Bool?
+  public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
 }
 public struct GetFeedOfFeedRoomResponse : Swift.Decodable {
@@ -190,6 +211,21 @@ public class GetCommentLikesRequest : Swift.Encodable {
   public func pageSize(_ pageSize: Swift.Int) -> LikeMindsFeed.GetCommentLikesRequest
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+}
+public struct Activity : Swift.Codable {
+  public let id: Swift.String?
+  public let action: Swift.Int?
+  public let actionBy: [Swift.String]?
+  public let actionOn: Swift.String?
+  public let activityEntityData: LikeMindsFeed.ActivityEntityData?
+  public let activityText: Swift.String?
+  public let createdAt: Swift.Int?
+  public let cta: Swift.String?, entityID: Swift.String?, entityOwnerID: Swift.String?
+  public let entityType: Swift.Int?
+  public let isRead: Swift.Bool?
+  public let updatedAt: Swift.Int?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 public class InitiateUserRequest : Swift.Encodable {
   public init(_ apiKey: Swift.String)
@@ -300,6 +336,11 @@ public struct GetTaggingListResponse : Swift.Codable {
   public let members: [LikeMindsFeed.User]?
   public func encode(to encoder: Swift.Encoder) throws
   public init(from decoder: Swift.Decoder) throws
+}
+public class MarkReadNotificationRequest : Swift.Encodable {
+  public init(activityId: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
 }
 public class OGTags : Swift.Codable {
   public var title: Swift.String?, image: Swift.String?, description: Swift.String?, url: Swift.String?
@@ -421,7 +462,12 @@ public struct ManagerRight : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers public class LMFeedClient {
-  public static let shared: LikeMindsFeed.LMFeedClient
+  public static var shared: LikeMindsFeed.LMFeedClient {
+    get
+  }
+  public static func builder() -> LikeMindsFeed.LMFeedClient
+  public func lmCallback(_ lmCallback: LikeMindsFeed.LMCallback?) -> LikeMindsFeed.LMFeedClient
+  public func build() -> LikeMindsFeed.LMFeedClient
   @objc deinit
 }
 public struct GetFeedOfFeedRoomRequest : Swift.Encodable {
@@ -526,7 +572,6 @@ extension LikeMindsFeed.LMFeedClient {
   public func likeComment(_ request: LikeMindsFeed.LikeCommentRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.NoData>?)
   public func getMemberState(_ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetMemberStateResponse>?)
   public func getFeedOfFeedRoom(_ request: LikeMindsFeed.GetFeedOfFeedRoomRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetFeedOfFeedRoomResponse>?)
-  public func getFeedNotifications(_ request: LikeMindsFeed.GetFeedNotificationRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetFeedNotificationResponse>?)
   public func report(_ request: LikeMindsFeed.ReportRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.NoData>?)
   public func decodeUrl(_ request: LikeMindsFeed.DecodeUrlRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.DecodeUrlResponse>?)
   public func getReportTags(_ request: LikeMindsFeed.GetReportTagRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetReportTagResponse>?)
@@ -536,6 +581,9 @@ extension LikeMindsFeed.LMFeedClient {
   public func pinPost(_ request: LikeMindsFeed.PinPostRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.NoData>?)
   public func editPost(_ request: LikeMindsFeed.EditPostRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.EditPostResponse>?)
   public func editComment(_ request: LikeMindsFeed.EditCommentRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.EditCommentResponse>?)
+  public func markReadNotification(_ request: LikeMindsFeed.MarkReadNotificationRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.NoData>?)
+  public func getUnreadNotificationCount(_ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetUnreadNotificationCountResponse>?)
+  public func getNotificationFeed(_ request: LikeMindsFeed.GetNotificationFeedRequest, _ response: LikeMindsFeed.LMFeedClientResponse<LikeMindsFeed.GetNotificationFeedResponse>?)
 }
 public struct GetFeedResponse : Swift.Decodable {
   public let posts: [LikeMindsFeed.Post]?
@@ -580,7 +628,9 @@ public struct User : Swift.Codable {
   public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
 }
-public struct GetFeedNotificationResponse : Swift.Decodable {
+public struct GetNotificationFeedResponse : Swift.Decodable {
+  public let activities: [LikeMindsFeed.Activity]?
+  public let users: [Swift.String : LikeMindsFeed.User]?
   public init(from decoder: Swift.Decoder) throws
 }
 public class AddCommentRequest : Swift.Encodable {

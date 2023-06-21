@@ -2124,8 +2124,8 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "GetFeedNotificationRequest",
-        "printedName": "GetFeedNotificationRequest",
+        "name": "GetNotificationFeedRequest",
+        "printedName": "GetNotificationFeedRequest",
         "children": [
           {
             "kind": "Constructor",
@@ -2134,9 +2134,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "GetFeedNotificationRequest",
-                "printedName": "LikeMindsFeed.GetFeedNotificationRequest",
-                "usr": "s:13LikeMindsFeed03GetC19NotificationRequestC"
+                "name": "GetNotificationFeedRequest",
+                "printedName": "LikeMindsFeed.GetNotificationFeedRequest",
+                "usr": "s:13LikeMindsFeed015GetNotificationC7RequestC"
               },
               {
                 "kind": "TypeNominal",
@@ -2153,8 +2153,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13LikeMindsFeed03GetC19NotificationRequestC4page0G4SizeACSi_Sitcfc",
-            "mangledName": "$s13LikeMindsFeed03GetC19NotificationRequestC4page0G4SizeACSi_Sitcfc",
+            "usr": "s:13LikeMindsFeed015GetNotificationC7RequestC4page0G4SizeACSi_Sitcfc",
+            "mangledName": "$s13LikeMindsFeed015GetNotificationC7RequestC4page0G4SizeACSi_Sitcfc",
             "moduleName": "LikeMindsFeed",
             "declAttributes": [
               "AccessControl"
@@ -2168,9 +2168,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "GetFeedNotificationRequest",
-                "printedName": "LikeMindsFeed.GetFeedNotificationRequest",
-                "usr": "s:13LikeMindsFeed03GetC19NotificationRequestC"
+                "name": "GetNotificationFeedRequest",
+                "printedName": "LikeMindsFeed.GetNotificationFeedRequest",
+                "usr": "s:13LikeMindsFeed015GetNotificationC7RequestC"
               },
               {
                 "kind": "TypeNominal",
@@ -2180,8 +2180,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13LikeMindsFeed03GetC19NotificationRequestC8pageSizeyACSiF",
-            "mangledName": "$s13LikeMindsFeed03GetC19NotificationRequestC8pageSizeyACSiF",
+            "usr": "s:13LikeMindsFeed015GetNotificationC7RequestC8pageSizeyACSiF",
+            "mangledName": "$s13LikeMindsFeed015GetNotificationC7RequestC8pageSizeyACSiF",
             "moduleName": "LikeMindsFeed",
             "declAttributes": [
               "AccessControl"
@@ -2206,8 +2206,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13LikeMindsFeed03GetC19NotificationRequestC6encode2toys7Encoder_p_tKF",
-            "mangledName": "$s13LikeMindsFeed03GetC19NotificationRequestC6encode2toys7Encoder_p_tKF",
+            "usr": "s:13LikeMindsFeed015GetNotificationC7RequestC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13LikeMindsFeed015GetNotificationC7RequestC6encode2toys7Encoder_p_tKF",
             "moduleName": "LikeMindsFeed",
             "implicit": true,
             "throwing": true,
@@ -2215,8 +2215,8 @@
           }
         ],
         "declKind": "Class",
-        "usr": "s:13LikeMindsFeed03GetC19NotificationRequestC",
-        "mangledName": "$s13LikeMindsFeed03GetC19NotificationRequestC",
+        "usr": "s:13LikeMindsFeed015GetNotificationC7RequestC",
+        "mangledName": "$s13LikeMindsFeed015GetNotificationC7RequestC",
         "moduleName": "LikeMindsFeed",
         "declAttributes": [
           "AccessControl"
@@ -2560,6 +2560,125 @@
             "printedName": "Encodable",
             "usr": "s:SE",
             "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GetUnreadNotificationCountResponse",
+        "printedName": "GetUnreadNotificationCountResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "count",
+            "printedName": "count",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed34GetUnreadNotificationCountResponseV5countSiSgvp",
+            "mangledName": "$s13LikeMindsFeed34GetUnreadNotificationCountResponseV5countSiSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed34GetUnreadNotificationCountResponseV5countSiSgvg",
+                "mangledName": "$s13LikeMindsFeed34GetUnreadNotificationCountResponseV5countSiSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GetUnreadNotificationCountResponse",
+                "printedName": "LikeMindsFeed.GetUnreadNotificationCountResponse",
+                "usr": "s:13LikeMindsFeed34GetUnreadNotificationCountResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsFeed34GetUnreadNotificationCountResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13LikeMindsFeed34GetUnreadNotificationCountResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "LikeMindsFeed",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LikeMindsFeed34GetUnreadNotificationCountResponseV",
+        "mangledName": "$s13LikeMindsFeed34GetUnreadNotificationCountResponseV",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
           }
         ]
       },
@@ -4764,8 +4883,8 @@
         "children": [
           {
             "kind": "Function",
-            "name": "loginRequiredCallback",
-            "printedName": "loginRequiredCallback()",
+            "name": "login",
+            "printedName": "login()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4774,8 +4893,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13LikeMindsFeed10LMCallbackP21loginRequiredCallbackyyF",
-            "mangledName": "$s13LikeMindsFeed10LMCallbackP21loginRequiredCallbackyyF",
+            "usr": "s:13LikeMindsFeed10LMCallbackP5loginyyF",
+            "mangledName": "$s13LikeMindsFeed10LMCallbackP5loginyyF",
             "moduleName": "LikeMindsFeed",
             "genericSig": "<τ_0_0 where τ_0_0 : LikeMindsFeed.LMCallback>",
             "sugared_genericSig": "<Self where Self : LikeMindsFeed.LMCallback>",
@@ -4788,8 +4907,8 @@
           },
           {
             "kind": "Function",
-            "name": "loginRequiredCallback",
-            "printedName": "loginRequiredCallback()",
+            "name": "login",
+            "printedName": "login()",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -4798,8 +4917,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:13LikeMindsFeed10LMCallbackPAAE21loginRequiredCallbackyyF",
-            "mangledName": "$s13LikeMindsFeed10LMCallbackPAAE21loginRequiredCallbackyyF",
+            "usr": "s:13LikeMindsFeed10LMCallbackPAAE5loginyyF",
+            "mangledName": "$s13LikeMindsFeed10LMCallbackPAAE5loginyyF",
             "moduleName": "LikeMindsFeed",
             "genericSig": "<τ_0_0 where τ_0_0 : LikeMindsFeed.LMCallback>",
             "sugared_genericSig": "<Self where Self : LikeMindsFeed.LMCallback>",
@@ -4844,10 +4963,10 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
+              "SetterAccess",
               "AccessControl",
               "RawDocComment"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -4876,118 +4995,32 @@
             ]
           },
           {
-            "kind": "Var",
+            "kind": "Function",
             "name": "lmCallback",
-            "printedName": "lmCallback",
+            "printedName": "lmCallback(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "WeakStorage",
-                "printedName": "LikeMindsFeed.LMCallback?"
+                "name": "FeedTokenManager",
+                "printedName": "LikeMindsFeed.FeedTokenManager",
+                "usr": "s:13LikeMindsFeed0C12TokenManagerC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LMCallback",
+                "printedName": "LikeMindsFeed.LMCallback",
+                "usr": "s:13LikeMindsFeed10LMCallbackP"
               }
             ],
-            "declKind": "Var",
-            "usr": "s:13LikeMindsFeed0C12TokenManagerC10lmCallbackAA10LMCallback_pSgvp",
-            "mangledName": "$s13LikeMindsFeed0C12TokenManagerC10lmCallbackAA10LMCallback_pSgvp",
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed0C12TokenManagerC10lmCallbackyAcA10LMCallback_pF",
+            "mangledName": "$s13LikeMindsFeed0C12TokenManagerC10lmCallbackyAcA10LMCallback_pF",
             "moduleName": "LikeMindsFeed",
             "declAttributes": [
-              "HasInitialValue",
               "Final",
-              "HasStorage",
-              "ReferenceOwnership",
-              "AccessControl",
-              "RawDocComment"
+              "AccessControl"
             ],
-            "ownership": 1,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "LikeMindsFeed.LMCallback?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LMCallback",
-                        "printedName": "LikeMindsFeed.LMCallback",
-                        "usr": "s:13LikeMindsFeed10LMCallbackP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsFeed0C12TokenManagerC10lmCallbackAA10LMCallback_pSgvg",
-                "mangledName": "$s13LikeMindsFeed0C12TokenManagerC10lmCallbackAA10LMCallback_pSgvg",
-                "moduleName": "LikeMindsFeed",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "LikeMindsFeed.LMCallback?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LMCallback",
-                        "printedName": "LikeMindsFeed.LMCallback",
-                        "usr": "s:13LikeMindsFeed10LMCallbackP"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsFeed0C12TokenManagerC10lmCallbackAA10LMCallback_pSgvs",
-                "mangledName": "$s13LikeMindsFeed0C12TokenManagerC10lmCallbackAA10LMCallback_pSgvs",
-                "moduleName": "LikeMindsFeed",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:13LikeMindsFeed0C12TokenManagerC10lmCallbackAA10LMCallback_pSgvM",
-                "mangledName": "$s13LikeMindsFeed0C12TokenManagerC10lmCallbackAA10LMCallback_pSgvM",
-                "moduleName": "LikeMindsFeed",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "_modify"
-              }
-            ]
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -5143,6 +5176,1270 @@
         "moduleName": "LikeMindsFeed",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ActivityEntityData",
+        "printedName": "ActivityEntityData",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV2idSSSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV2idSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV2idSSSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV2idSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "attachments",
+            "printedName": "attachments",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[LikeMindsFeed.Attachment]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[LikeMindsFeed.Attachment]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Attachment",
+                        "printedName": "LikeMindsFeed.Attachment",
+                        "usr": "s:13LikeMindsFeed10AttachmentC"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV11attachmentsSayAA10AttachmentCGSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV11attachmentsSayAA10AttachmentCGSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[LikeMindsFeed.Attachment]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[LikeMindsFeed.Attachment]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Attachment",
+                            "printedName": "LikeMindsFeed.Attachment",
+                            "usr": "s:13LikeMindsFeed10AttachmentC"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV11attachmentsSayAA10AttachmentCGSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV11attachmentsSayAA10AttachmentCGSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "commentsCount",
+            "printedName": "commentsCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV13commentsCountSiSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV13commentsCountSiSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV13commentsCountSiSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV13commentsCountSiSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "communityID",
+            "printedName": "communityID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV11communityIDSiSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV11communityIDSiSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV11communityIDSiSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV11communityIDSiSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "createdAt",
+            "printedName": "createdAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV9createdAtSiSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV9createdAtSiSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV9createdAtSiSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV9createdAtSiSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "heading",
+            "printedName": "heading",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV7headingSSSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV7headingSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV7headingSSSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV7headingSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isEdited",
+            "printedName": "isEdited",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV8isEditedSbSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV8isEditedSbSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV8isEditedSbSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV8isEditedSbSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isLiked",
+            "printedName": "isLiked",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV7isLikedSbSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV7isLikedSbSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV7isLikedSbSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV7isLikedSbSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isPinned",
+            "printedName": "isPinned",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV8isPinnedSbSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV8isPinnedSbSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV8isPinnedSbSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV8isPinnedSbSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isSaved",
+            "printedName": "isSaved",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV7isSavedSbSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV7isSavedSbSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV7isSavedSbSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV7isSavedSbSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "likesCount",
+            "printedName": "likesCount",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV10likesCountSiSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV10likesCountSiSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV10likesCountSiSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV10likesCountSiSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "menuItems",
+            "printedName": "menuItems",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[LikeMindsFeed.MenuItem]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[LikeMindsFeed.MenuItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MenuItem",
+                        "printedName": "LikeMindsFeed.MenuItem",
+                        "usr": "s:13LikeMindsFeed8MenuItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV9menuItemsSayAA8MenuItemVGSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV9menuItemsSayAA8MenuItemVGSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[LikeMindsFeed.MenuItem]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[LikeMindsFeed.MenuItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MenuItem",
+                            "printedName": "LikeMindsFeed.MenuItem",
+                            "usr": "s:13LikeMindsFeed8MenuItemV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV9menuItemsSayAA8MenuItemVGSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV9menuItemsSayAA8MenuItemVGSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "text",
+            "printedName": "text",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV4textSSSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV4textSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV4textSSSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV4textSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "updatedAt",
+            "printedName": "updatedAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV9updatedAtSiSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV9updatedAtSiSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV9updatedAtSiSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV9updatedAtSiSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "userID",
+            "printedName": "userID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV6userIDSSSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV6userIDSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV6userIDSSSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV6userIDSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uuid",
+            "printedName": "uuid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV4uuidSSSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV4uuidSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV4uuidSSSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV4uuidSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deleteReason",
+            "printedName": "deleteReason",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV12deleteReasonSSSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV12deleteReasonSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV12deleteReasonSSSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV12deleteReasonSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "deletedBy",
+            "printedName": "deletedBy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV9deletedBySSSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV9deletedBySSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV9deletedBySSSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV9deletedBySSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isDeleted",
+            "printedName": "isDeleted",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV9isDeletedSbSgvp",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV9isDeletedSbSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV9isDeletedSbSgvg",
+                "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV9isDeletedSbSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ActivityEntityData",
+                "printedName": "LikeMindsFeed.ActivityEntityData",
+                "usr": "s:13LikeMindsFeed18ActivityEntityDataV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "LikeMindsFeed",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed18ActivityEntityDataV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV6encode2toys7Encoder_p_tKF",
+            "moduleName": "LikeMindsFeed",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LikeMindsFeed18ActivityEntityDataV",
+        "mangledName": "$s13LikeMindsFeed18ActivityEntityDataV",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -5836,6 +7133,894 @@
         "moduleName": "LikeMindsFeed",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "Activity",
+        "printedName": "Activity",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "id",
+            "printedName": "id",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8ActivityV2idSSSgvp",
+            "mangledName": "$s13LikeMindsFeed8ActivityV2idSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8ActivityV2idSSSgvg",
+                "mangledName": "$s13LikeMindsFeed8ActivityV2idSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "action",
+            "printedName": "action",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8ActivityV6actionSiSgvp",
+            "mangledName": "$s13LikeMindsFeed8ActivityV6actionSiSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8ActivityV6actionSiSgvg",
+                "mangledName": "$s13LikeMindsFeed8ActivityV6actionSiSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "actionBy",
+            "printedName": "actionBy",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8ActivityV8actionBySaySSGSgvp",
+            "mangledName": "$s13LikeMindsFeed8ActivityV8actionBySaySSGSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8ActivityV8actionBySaySSGSgvg",
+                "mangledName": "$s13LikeMindsFeed8ActivityV8actionBySaySSGSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "actionOn",
+            "printedName": "actionOn",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8ActivityV8actionOnSSSgvp",
+            "mangledName": "$s13LikeMindsFeed8ActivityV8actionOnSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8ActivityV8actionOnSSSgvg",
+                "mangledName": "$s13LikeMindsFeed8ActivityV8actionOnSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activityEntityData",
+            "printedName": "activityEntityData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LikeMindsFeed.ActivityEntityData?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ActivityEntityData",
+                    "printedName": "LikeMindsFeed.ActivityEntityData",
+                    "usr": "s:13LikeMindsFeed18ActivityEntityDataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8ActivityV18activityEntityDataAA0dfG0VSgvp",
+            "mangledName": "$s13LikeMindsFeed8ActivityV18activityEntityDataAA0dfG0VSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LikeMindsFeed.ActivityEntityData?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ActivityEntityData",
+                        "printedName": "LikeMindsFeed.ActivityEntityData",
+                        "usr": "s:13LikeMindsFeed18ActivityEntityDataV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8ActivityV18activityEntityDataAA0dfG0VSgvg",
+                "mangledName": "$s13LikeMindsFeed8ActivityV18activityEntityDataAA0dfG0VSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "activityText",
+            "printedName": "activityText",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8ActivityV12activityTextSSSgvp",
+            "mangledName": "$s13LikeMindsFeed8ActivityV12activityTextSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8ActivityV12activityTextSSSgvg",
+                "mangledName": "$s13LikeMindsFeed8ActivityV12activityTextSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "createdAt",
+            "printedName": "createdAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8ActivityV9createdAtSiSgvp",
+            "mangledName": "$s13LikeMindsFeed8ActivityV9createdAtSiSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8ActivityV9createdAtSiSgvg",
+                "mangledName": "$s13LikeMindsFeed8ActivityV9createdAtSiSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "cta",
+            "printedName": "cta",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8ActivityV3ctaSSSgvp",
+            "mangledName": "$s13LikeMindsFeed8ActivityV3ctaSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8ActivityV3ctaSSSgvg",
+                "mangledName": "$s13LikeMindsFeed8ActivityV3ctaSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "entityID",
+            "printedName": "entityID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8ActivityV8entityIDSSSgvp",
+            "mangledName": "$s13LikeMindsFeed8ActivityV8entityIDSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8ActivityV8entityIDSSSgvg",
+                "mangledName": "$s13LikeMindsFeed8ActivityV8entityIDSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "entityOwnerID",
+            "printedName": "entityOwnerID",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8ActivityV13entityOwnerIDSSSgvp",
+            "mangledName": "$s13LikeMindsFeed8ActivityV13entityOwnerIDSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8ActivityV13entityOwnerIDSSSgvg",
+                "mangledName": "$s13LikeMindsFeed8ActivityV13entityOwnerIDSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "entityType",
+            "printedName": "entityType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8ActivityV10entityTypeSiSgvp",
+            "mangledName": "$s13LikeMindsFeed8ActivityV10entityTypeSiSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8ActivityV10entityTypeSiSgvg",
+                "mangledName": "$s13LikeMindsFeed8ActivityV10entityTypeSiSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isRead",
+            "printedName": "isRead",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8ActivityV6isReadSbSgvp",
+            "mangledName": "$s13LikeMindsFeed8ActivityV6isReadSbSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8ActivityV6isReadSbSgvg",
+                "mangledName": "$s13LikeMindsFeed8ActivityV6isReadSbSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "updatedAt",
+            "printedName": "updatedAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8ActivityV9updatedAtSiSgvp",
+            "mangledName": "$s13LikeMindsFeed8ActivityV9updatedAtSiSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8ActivityV9updatedAtSiSgvg",
+                "mangledName": "$s13LikeMindsFeed8ActivityV9updatedAtSiSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Activity",
+                "printedName": "LikeMindsFeed.Activity",
+                "usr": "s:13LikeMindsFeed8ActivityV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsFeed8ActivityV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13LikeMindsFeed8ActivityV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "LikeMindsFeed",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed8ActivityV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13LikeMindsFeed8ActivityV6encode2toys7Encoder_p_tKF",
+            "moduleName": "LikeMindsFeed",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LikeMindsFeed8ActivityV",
+        "mangledName": "$s13LikeMindsFeed8ActivityV",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -7496,6 +9681,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "Community",
         "printedName": "Community",
@@ -8885,6 +11080,91 @@
             "usr": "s:Se",
             "mangledName": "$sSe"
           },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MarkReadNotificationRequest",
+        "printedName": "MarkReadNotificationRequest",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(activityId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MarkReadNotificationRequest",
+                "printedName": "LikeMindsFeed.MarkReadNotificationRequest",
+                "usr": "s:13LikeMindsFeed27MarkReadNotificationRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsFeed27MarkReadNotificationRequestC10activityIdACSS_tcfc",
+            "mangledName": "$s13LikeMindsFeed27MarkReadNotificationRequestC10activityIdACSS_tcfc",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed27MarkReadNotificationRequestC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13LikeMindsFeed27MarkReadNotificationRequestC6encode2toys7Encoder_p_tKF",
+            "moduleName": "LikeMindsFeed",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13LikeMindsFeed27MarkReadNotificationRequestC",
+        "mangledName": "$s13LikeMindsFeed27MarkReadNotificationRequestC",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
           {
             "kind": "Conformance",
             "name": "Encodable",
@@ -13511,9 +15791,9 @@
               "HasInitialValue",
               "Final",
               "HasStorage",
+              "SetterAccess",
               "AccessControl"
             ],
-            "isLet": true,
             "hasStorage": true,
             "accessors": [
               {
@@ -13540,6 +15820,85 @@
                 "accessorKind": "get"
               }
             ]
+          },
+          {
+            "kind": "Function",
+            "name": "builder",
+            "printedName": "builder()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LMFeedClient",
+                "printedName": "LikeMindsFeed.LMFeedClient",
+                "usr": "s:13LikeMindsFeed12LMFeedClientC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed12LMFeedClientC7builderACyFZ",
+            "mangledName": "$s13LikeMindsFeed12LMFeedClientC7builderACyFZ",
+            "moduleName": "LikeMindsFeed",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "lmCallback",
+            "printedName": "lmCallback(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LMFeedClient",
+                "printedName": "LikeMindsFeed.LMFeedClient",
+                "usr": "s:13LikeMindsFeed12LMFeedClientC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LikeMindsFeed.LMCallback?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LMCallback",
+                    "printedName": "LikeMindsFeed.LMCallback",
+                    "usr": "s:13LikeMindsFeed10LMCallbackP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed12LMFeedClientC10lmCallbackyAcA10LMCallback_pSgF",
+            "mangledName": "$s13LikeMindsFeed12LMFeedClientC10lmCallbackyAcA10LMCallback_pSgF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "build",
+            "printedName": "build()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LMFeedClient",
+                "printedName": "LikeMindsFeed.LMFeedClient",
+                "usr": "s:13LikeMindsFeed12LMFeedClientC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed12LMFeedClientC5buildACyF",
+            "mangledName": "$s13LikeMindsFeed12LMFeedClientC5buildACyF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           },
           {
             "kind": "Function",
@@ -14574,67 +16933,6 @@
           },
           {
             "kind": "Function",
-            "name": "getFeedNotifications",
-            "printedName": "getFeedNotifications(_:_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "GetFeedNotificationRequest",
-                "printedName": "LikeMindsFeed.GetFeedNotificationRequest",
-                "usr": "s:13LikeMindsFeed03GetC19NotificationRequestC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "((LikeMindsFeed.LMResponse<LikeMindsFeed.GetFeedNotificationResponse>) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(LikeMindsFeed.LMResponse<LikeMindsFeed.GetFeedNotificationResponse>) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "LMResponse",
-                        "printedName": "LikeMindsFeed.LMResponse<LikeMindsFeed.GetFeedNotificationResponse>",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "GetFeedNotificationResponse",
-                            "printedName": "LikeMindsFeed.GetFeedNotificationResponse",
-                            "usr": "s:13LikeMindsFeed03GetC20NotificationResponseV"
-                          }
-                        ],
-                        "usr": "s:13LikeMindsFeed10LMResponseV"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:13LikeMindsFeed12LMFeedClientC03getC13NotificationsyyAA03GetC19NotificationRequestC_yAA10LMResponseVyAA0hcI8ResponseVGcSgtF",
-            "mangledName": "$s13LikeMindsFeed12LMFeedClientC03getC13NotificationsyyAA03GetC19NotificationRequestC_yAA10LMResponseVyAA0hcI8ResponseVGcSgtF",
-            "moduleName": "LikeMindsFeed",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "report",
             "printedName": "report(_:_:)",
             "children": [
@@ -15169,6 +17467,183 @@
             "declKind": "Func",
             "usr": "s:13LikeMindsFeed12LMFeedClientC11editCommentyyAA04EditG7RequestC_yAA10LMResponseVyAA0hG8ResponseVGcSgtF",
             "mangledName": "$s13LikeMindsFeed12LMFeedClientC11editCommentyyAA04EditG7RequestC_yAA10LMResponseVyAA0hG8ResponseVGcSgtF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "markReadNotification",
+            "printedName": "markReadNotification(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MarkReadNotificationRequest",
+                "printedName": "LikeMindsFeed.MarkReadNotificationRequest",
+                "usr": "s:13LikeMindsFeed27MarkReadNotificationRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((LikeMindsFeed.LMResponse<LikeMindsFeed.NoData>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LikeMindsFeed.LMResponse<LikeMindsFeed.NoData>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LMResponse",
+                        "printedName": "LikeMindsFeed.LMResponse<LikeMindsFeed.NoData>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NoData",
+                            "printedName": "LikeMindsFeed.NoData",
+                            "usr": "s:13LikeMindsFeed6NoDataV"
+                          }
+                        ],
+                        "usr": "s:13LikeMindsFeed10LMResponseV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed12LMFeedClientC20markReadNotificationyyAA04MarkgH7RequestC_yAA10LMResponseVyAA6NoDataVGcSgtF",
+            "mangledName": "$s13LikeMindsFeed12LMFeedClientC20markReadNotificationyyAA04MarkgH7RequestC_yAA10LMResponseVyAA6NoDataVGcSgtF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUnreadNotificationCount",
+            "printedName": "getUnreadNotificationCount(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((LikeMindsFeed.LMResponse<LikeMindsFeed.GetUnreadNotificationCountResponse>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LikeMindsFeed.LMResponse<LikeMindsFeed.GetUnreadNotificationCountResponse>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LMResponse",
+                        "printedName": "LikeMindsFeed.LMResponse<LikeMindsFeed.GetUnreadNotificationCountResponse>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GetUnreadNotificationCountResponse",
+                            "printedName": "LikeMindsFeed.GetUnreadNotificationCountResponse",
+                            "usr": "s:13LikeMindsFeed34GetUnreadNotificationCountResponseV"
+                          }
+                        ],
+                        "usr": "s:13LikeMindsFeed10LMResponseV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed12LMFeedClientC26getUnreadNotificationCountyyyAA10LMResponseVyAA03GetghI8ResponseVGcSgF",
+            "mangledName": "$s13LikeMindsFeed12LMFeedClientC26getUnreadNotificationCountyyyAA10LMResponseVyAA03GetghI8ResponseVGcSgF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getNotificationFeed",
+            "printedName": "getNotificationFeed(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GetNotificationFeedRequest",
+                "printedName": "LikeMindsFeed.GetNotificationFeedRequest",
+                "usr": "s:13LikeMindsFeed015GetNotificationC7RequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((LikeMindsFeed.LMResponse<LikeMindsFeed.GetNotificationFeedResponse>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LikeMindsFeed.LMResponse<LikeMindsFeed.GetNotificationFeedResponse>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LMResponse",
+                        "printedName": "LikeMindsFeed.LMResponse<LikeMindsFeed.GetNotificationFeedResponse>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GetNotificationFeedResponse",
+                            "printedName": "LikeMindsFeed.GetNotificationFeedResponse",
+                            "usr": "s:13LikeMindsFeed015GetNotificationC8ResponseV"
+                          }
+                        ],
+                        "usr": "s:13LikeMindsFeed10LMResponseV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed12LMFeedClientC015getNotificationC0yyAA03GetgC7RequestC_yAA10LMResponseVyAA0hgC8ResponseVGcSgtF",
+            "mangledName": "$s13LikeMindsFeed12LMFeedClientC015getNotificationC0yyAA03GetgC7RequestC_yAA10LMResponseVyAA0hgC8ResponseVGcSgtF",
             "moduleName": "LikeMindsFeed",
             "declAttributes": [
               "AccessControl"
@@ -20945,9 +23420,173 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "GetFeedNotificationResponse",
-        "printedName": "GetFeedNotificationResponse",
+        "name": "GetNotificationFeedResponse",
+        "printedName": "GetNotificationFeedResponse",
         "children": [
+          {
+            "kind": "Var",
+            "name": "activities",
+            "printedName": "activities",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[LikeMindsFeed.Activity]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[LikeMindsFeed.Activity]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Activity",
+                        "printedName": "LikeMindsFeed.Activity",
+                        "usr": "s:13LikeMindsFeed8ActivityV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed015GetNotificationC8ResponseV10activitiesSayAA8ActivityVGSgvp",
+            "mangledName": "$s13LikeMindsFeed015GetNotificationC8ResponseV10activitiesSayAA8ActivityVGSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[LikeMindsFeed.Activity]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[LikeMindsFeed.Activity]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Activity",
+                            "printedName": "LikeMindsFeed.Activity",
+                            "usr": "s:13LikeMindsFeed8ActivityV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed015GetNotificationC8ResponseV10activitiesSayAA8ActivityVGSgvg",
+                "mangledName": "$s13LikeMindsFeed015GetNotificationC8ResponseV10activitiesSayAA8ActivityVGSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "users",
+            "printedName": "users",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : LikeMindsFeed.User]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : LikeMindsFeed.User]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "User",
+                        "printedName": "LikeMindsFeed.User",
+                        "usr": "s:13LikeMindsFeed4UserV"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed015GetNotificationC8ResponseV5usersSDySSAA4UserVGSgvp",
+            "mangledName": "$s13LikeMindsFeed015GetNotificationC8ResponseV5usersSDySSAA4UserVGSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String : LikeMindsFeed.User]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Dictionary",
+                        "printedName": "[Swift.String : LikeMindsFeed.User]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "User",
+                            "printedName": "LikeMindsFeed.User",
+                            "usr": "s:13LikeMindsFeed4UserV"
+                          }
+                        ],
+                        "usr": "s:SD"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed015GetNotificationC8ResponseV5usersSDySSAA4UserVGSgvg",
+                "mangledName": "$s13LikeMindsFeed015GetNotificationC8ResponseV5usersSDySSAA4UserVGSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
           {
             "kind": "Constructor",
             "name": "init",
@@ -20955,9 +23594,9 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "GetFeedNotificationResponse",
-                "printedName": "LikeMindsFeed.GetFeedNotificationResponse",
-                "usr": "s:13LikeMindsFeed03GetC20NotificationResponseV"
+                "name": "GetNotificationFeedResponse",
+                "printedName": "LikeMindsFeed.GetNotificationFeedResponse",
+                "usr": "s:13LikeMindsFeed015GetNotificationC8ResponseV"
               },
               {
                 "kind": "TypeNominal",
@@ -20967,8 +23606,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:13LikeMindsFeed03GetC20NotificationResponseV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s13LikeMindsFeed03GetC20NotificationResponseV4fromACs7Decoder_p_tKcfc",
+            "usr": "s:13LikeMindsFeed015GetNotificationC8ResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13LikeMindsFeed015GetNotificationC8ResponseV4fromACs7Decoder_p_tKcfc",
             "moduleName": "LikeMindsFeed",
             "implicit": true,
             "throwing": true,
@@ -20976,11 +23615,12 @@
           }
         ],
         "declKind": "Struct",
-        "usr": "s:13LikeMindsFeed03GetC20NotificationResponseV",
-        "mangledName": "$s13LikeMindsFeed03GetC20NotificationResponseV",
+        "usr": "s:13LikeMindsFeed015GetNotificationC8ResponseV",
+        "mangledName": "$s13LikeMindsFeed015GetNotificationC8ResponseV",
         "moduleName": "LikeMindsFeed",
         "declAttributes": [
-          "AccessControl"
+          "AccessControl",
+          "RawDocComment"
         ],
         "conformances": [
           {
@@ -21626,28 +24266,28 @@
       "value": "\"page_size\""
     },
     {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/GetFeedNotificationRequest.swift",
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Request\/GetNotificationFeedRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 217,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/GetFeedNotificationRequest.swift",
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Request\/GetNotificationFeedRequest.swift",
       "kind": "IntegerLiteral",
       "offset": 268,
       "length": 2,
       "value": "20"
     },
     {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/GetFeedNotificationRequest.swift",
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Request\/GetNotificationFeedRequest.swift",
       "kind": "StringLiteral",
       "offset": 564,
       "length": 11,
       "value": "\"page_size\""
     },
     {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/GetFeedNotificationRequest.swift",
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Request\/GetNotificationFeedRequest.swift",
       "kind": "StringLiteral",
       "offset": 564,
       "length": 11,
@@ -21782,28 +24422,28 @@
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 11082,
+      "offset": 11531,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 11245,
+      "offset": 11694,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 11482,
+      "offset": 11931,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 11633,
+      "offset": 12082,
       "length": 2,
       "value": "\"\""
     },
@@ -22020,21 +24660,21 @@
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/TokenManager\/FeedTokenManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 748,
+      "offset": 906,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/TokenManager\/FeedTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 1878,
+      "offset": 2153,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/TokenManager\/FeedTokenManager.swift",
       "kind": "StringLiteral",
-      "offset": 1898,
+      "offset": 2173,
       "length": 2,
       "value": "\"\""
     },
@@ -22051,6 +24691,216 @@
       "offset": 816,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 710,
+      "length": 5,
+      "value": "\"_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 770,
+      "length": 16,
+      "value": "\"comments_count\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 814,
+      "length": 14,
+      "value": "\"community_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 854,
+      "length": 12,
+      "value": "\"created_at\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 912,
+      "length": 11,
+      "value": "\"is_edited\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 947,
+      "length": 10,
+      "value": "\"is_liked\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 982,
+      "length": 11,
+      "value": "\"is_pinned\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1017,
+      "length": 10,
+      "value": "\"is_saved\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1054,
+      "length": 13,
+      "value": "\"likes_count\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1093,
+      "length": 12,
+      "value": "\"menu_items\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1149,
+      "length": 12,
+      "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1184,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1240,
+      "length": 15,
+      "value": "\"delete_reason\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1281,
+      "length": 12,
+      "value": "\"deleted_by\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1319,
+      "length": 12,
+      "value": "\"is_deleted\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 710,
+      "length": 5,
+      "value": "\"_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 770,
+      "length": 16,
+      "value": "\"comments_count\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 814,
+      "length": 14,
+      "value": "\"community_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 854,
+      "length": 12,
+      "value": "\"created_at\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 912,
+      "length": 11,
+      "value": "\"is_edited\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 947,
+      "length": 10,
+      "value": "\"is_liked\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 982,
+      "length": 11,
+      "value": "\"is_pinned\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1017,
+      "length": 10,
+      "value": "\"is_saved\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1054,
+      "length": 13,
+      "value": "\"likes_count\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1093,
+      "length": 12,
+      "value": "\"menu_items\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1149,
+      "length": 12,
+      "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1184,
+      "length": 9,
+      "value": "\"user_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1240,
+      "length": 15,
+      "value": "\"delete_reason\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1281,
+      "length": 12,
+      "value": "\"deleted_by\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivityEntity.swift",
+      "kind": "StringLiteral",
+      "offset": 1319,
+      "length": 12,
+      "value": "\"is_deleted\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CommentsLikes\/Request\/GetCommentLikesRequest.swift",
@@ -22100,6 +24950,160 @@
       "offset": 198,
       "length": 25,
       "value": "\"LMUserPreferences.plist\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 632,
+      "length": 5,
+      "value": "\"_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 682,
+      "length": 11,
+      "value": "\"action_by\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 718,
+      "length": 11,
+      "value": "\"action_on\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 764,
+      "length": 22,
+      "value": "\"activity_entity_data\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 815,
+      "length": 15,
+      "value": "\"activity_text\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 856,
+      "length": 12,
+      "value": "\"created_at\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 910,
+      "length": 11,
+      "value": "\"entity_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 951,
+      "length": 17,
+      "value": "\"entity_owner_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 995,
+      "length": 13,
+      "value": "\"entity_type\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 1031,
+      "length": 9,
+      "value": "\"is_read\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 1066,
+      "length": 12,
+      "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 632,
+      "length": 5,
+      "value": "\"_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 682,
+      "length": 11,
+      "value": "\"action_by\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 718,
+      "length": 11,
+      "value": "\"action_on\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 764,
+      "length": 22,
+      "value": "\"activity_entity_data\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 815,
+      "length": 15,
+      "value": "\"activity_text\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 856,
+      "length": 12,
+      "value": "\"created_at\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 910,
+      "length": 11,
+      "value": "\"entity_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 951,
+      "length": 17,
+      "value": "\"entity_owner_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 995,
+      "length": 13,
+      "value": "\"entity_type\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 1031,
+      "length": 9,
+      "value": "\"is_read\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Response\/NotificationActivity.swift",
+      "kind": "StringLiteral",
+      "offset": 1066,
+      "length": 12,
+      "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/InitiateUserRequest.swift",
@@ -22774,6 +25778,20 @@
       "value": "2"
     },
     {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Request\/MarkReadNotificationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 365,
+      "length": 13,
+      "value": "\"activity_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/FeedNotification\/Request\/MarkReadNotificationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 365,
+      "length": 13,
+      "value": "\"activity_id\""
+    },
+    {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/PreferenceManager\/PersistentPreferences.swift",
       "kind": "StringLiteral",
       "offset": 199,
@@ -22855,7 +25873,7 @@
       "kind": "StringLiteral",
       "offset": 337,
       "length": 3,
-      "value": "\"2\""
+      "value": "\"3\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/UniversalFeed\/Request\/GetFeedRequest.swift",
