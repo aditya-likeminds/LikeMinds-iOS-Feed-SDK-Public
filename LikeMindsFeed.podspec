@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "LikeMindsFeed"
-  spec.version      = "1.4.0"
+  spec.version      = "1.5.0"
   spec.summary      = "LikeMindsFeed"
 
   # This description is used to generate tags and improve search results.
@@ -96,5 +96,5 @@ Pod::Spec.new do |spec|
   spec.framework  = "Foundation"
 
   
-  spec.dependency "Alamofire"
+  spec.dependency "Alamofire", '~> 5.7.1'
 end
