@@ -497,21 +497,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "LikeMindsFeed.Topic?",
+                "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Topic",
-                    "printedName": "LikeMindsFeed.Topic",
-                    "usr": "s:13LikeMindsFeed5TopicV"
+                    "name": "TopicResponse",
+                    "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse",
+                    "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:13LikeMindsFeed14WidgetMetadataV6ogTagsAA5TopicVSgvp",
-            "mangledName": "$s13LikeMindsFeed14WidgetMetadataV6ogTagsAA5TopicVSgvp",
+            "usr": "s:13LikeMindsFeed14WidgetMetadataV6ogTagsAA05TopicC8ResponseV0hI0VSgvp",
+            "mangledName": "$s13LikeMindsFeed14WidgetMetadataV6ogTagsAA05TopicC8ResponseV0hI0VSgvp",
             "moduleName": "LikeMindsFeed",
             "declAttributes": [
               "HasStorage",
@@ -528,21 +528,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "LikeMindsFeed.Topic?",
+                    "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Topic",
-                        "printedName": "LikeMindsFeed.Topic",
-                        "usr": "s:13LikeMindsFeed5TopicV"
+                        "name": "TopicResponse",
+                        "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse",
+                        "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13LikeMindsFeed14WidgetMetadataV6ogTagsAA5TopicVSgvg",
-                "mangledName": "$s13LikeMindsFeed14WidgetMetadataV6ogTagsAA5TopicVSgvg",
+                "usr": "s:13LikeMindsFeed14WidgetMetadataV6ogTagsAA05TopicC8ResponseV0hI0VSgvg",
+                "mangledName": "$s13LikeMindsFeed14WidgetMetadataV6ogTagsAA05TopicC8ResponseV0hI0VSgvg",
                 "moduleName": "LikeMindsFeed",
                 "implicit": true,
                 "accessorKind": "get"
@@ -835,56 +835,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "Topic",
-        "printedName": "Topic",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(from:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Topic",
-                "printedName": "LikeMindsFeed.Topic",
-                "usr": "s:13LikeMindsFeed5TopicV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Decoder",
-                "printedName": "Swift.Decoder",
-                "usr": "s:s7DecoderP"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:13LikeMindsFeed5TopicV4fromACs7Decoder_p_tKcfc",
-            "mangledName": "$s13LikeMindsFeed5TopicV4fromACs7Decoder_p_tKcfc",
-            "moduleName": "LikeMindsFeed",
-            "implicit": true,
-            "throwing": true,
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Struct",
-        "usr": "s:13LikeMindsFeed5TopicV",
-        "mangledName": "$s13LikeMindsFeed5TopicV",
-        "moduleName": "LikeMindsFeed",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          }
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -1143,13 +1093,6 @@
         "declAttributes": [
           "RawDocComment"
         ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "LikeMindsFeed"
       },
       {
         "kind": "TypeDecl",
@@ -2759,12 +2702,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : LikeMindsFeed.Topic]?",
+                "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : LikeMindsFeed.Topic]",
+                    "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2774,9 +2717,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Topic",
-                        "printedName": "LikeMindsFeed.Topic",
-                        "usr": "s:13LikeMindsFeed5TopicV"
+                        "name": "TopicResponse",
+                        "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse",
+                        "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V"
                       }
                     ],
                     "usr": "s:SD"
@@ -2786,8 +2729,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13LikeMindsFeed15GetPostResponseV6topicsSDySSAA5TopicVGSgvp",
-            "mangledName": "$s13LikeMindsFeed15GetPostResponseV6topicsSDySSAA5TopicVGSgvp",
+            "usr": "s:13LikeMindsFeed15GetPostResponseV6topicsSDySSAA05TopiccF0V0hF0VGSgvp",
+            "mangledName": "$s13LikeMindsFeed15GetPostResponseV6topicsSDySSAA05TopiccF0V0hF0VGSgvp",
             "moduleName": "LikeMindsFeed",
             "declAttributes": [
               "HasStorage",
@@ -2804,12 +2747,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : LikeMindsFeed.Topic]?",
+                    "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : LikeMindsFeed.Topic]",
+                        "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -2819,9 +2762,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "Topic",
-                            "printedName": "LikeMindsFeed.Topic",
-                            "usr": "s:13LikeMindsFeed5TopicV"
+                            "name": "TopicResponse",
+                            "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse",
+                            "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V"
                           }
                         ],
                         "usr": "s:SD"
@@ -2831,8 +2774,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13LikeMindsFeed15GetPostResponseV6topicsSDySSAA5TopicVGSgvg",
-                "mangledName": "$s13LikeMindsFeed15GetPostResponseV6topicsSDySSAA5TopicVGSgvg",
+                "usr": "s:13LikeMindsFeed15GetPostResponseV6topicsSDySSAA05TopiccF0V0hF0VGSgvg",
+                "mangledName": "$s13LikeMindsFeed15GetPostResponseV6topicsSDySSAA05TopiccF0V0hF0VGSgvg",
                 "moduleName": "LikeMindsFeed",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6599,6 +6542,66 @@
                 "declKind": "Accessor",
                 "usr": "s:13LikeMindsFeed7CommentV9updatedAtSiSgvg",
                 "mangledName": "$s13LikeMindsFeed7CommentV9updatedAtSiSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tempId",
+            "printedName": "tempId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed7CommentV6tempIdSSSgvp",
+            "mangledName": "$s13LikeMindsFeed7CommentV6tempIdSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed7CommentV6tempIdSSSgvg",
+                "mangledName": "$s13LikeMindsFeed7CommentV6tempIdSSSgvg",
                 "moduleName": "LikeMindsFeed",
                 "implicit": true,
                 "accessorKind": "get"
@@ -14252,6 +14255,41 @@
           },
           {
             "kind": "Function",
+            "name": "addTopics",
+            "printedName": "addTopics(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "EditPostRequest",
+                "printedName": "LikeMindsFeed.EditPostRequest",
+                "usr": "s:13LikeMindsFeed15EditPostRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed15EditPostRequestC9addTopicsyACSaySSGF",
+            "mangledName": "$s13LikeMindsFeed15EditPostRequestC9addTopicsyACSaySSGF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "encode",
             "printedName": "encode(to:)",
             "children": [
@@ -15154,6 +15192,33 @@
           },
           {
             "kind": "Function",
+            "name": "tempId",
+            "printedName": "tempId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AddPostRequest",
+                "printedName": "LikeMindsFeed.AddPostRequest",
+                "usr": "s:13LikeMindsFeed14AddPostRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed14AddPostRequestC6tempIdyACSSF",
+            "mangledName": "$s13LikeMindsFeed14AddPostRequestC6tempIdyACSSF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "onBehalfOfUUID",
             "printedName": "onBehalfOfUUID(_:)",
             "children": [
@@ -15181,6 +15246,41 @@
             "declKind": "Func",
             "usr": "s:13LikeMindsFeed14AddPostRequestC14onBehalfOfUUIDyACSSSgF",
             "mangledName": "$s13LikeMindsFeed14AddPostRequestC14onBehalfOfUUIDyACSSSgF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addTopics",
+            "printedName": "addTopics(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AddPostRequest",
+                "printedName": "LikeMindsFeed.AddPostRequest",
+                "usr": "s:13LikeMindsFeed14AddPostRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed14AddPostRequestC9addTopicsyACSaySSGF",
+            "mangledName": "$s13LikeMindsFeed14AddPostRequestC9addTopicsyACSaySSGF",
             "moduleName": "LikeMindsFeed",
             "declAttributes": [
               "AccessControl"
@@ -16585,6 +16685,204 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "TopicFeedRequest",
+        "printedName": "TopicFeedRequest",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "builder",
+            "printedName": "builder()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TopicFeedRequest",
+                "printedName": "LikeMindsFeed.TopicFeedRequest",
+                "usr": "s:13LikeMindsFeed05TopicC7RequestC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed05TopicC7RequestC7builderACyFZ",
+            "mangledName": "$s13LikeMindsFeed05TopicC7RequestC7builderACyFZ",
+            "moduleName": "LikeMindsFeed",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "build",
+            "printedName": "build()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSelf",
+                "printedName": "Self"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed05TopicC7RequestC5buildACXDyF",
+            "mangledName": "$s13LikeMindsFeed05TopicC7RequestC5buildACXDyF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSearchTopic",
+            "printedName": "setSearchTopic(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSelf",
+                "printedName": "Self"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed05TopicC7RequestC09setSearchD0yACXDSSF",
+            "mangledName": "$s13LikeMindsFeed05TopicC7RequestC09setSearchD0yACXDSSF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setSearchType",
+            "printedName": "setSearchType(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSelf",
+                "printedName": "Self"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed05TopicC7RequestC13setSearchTypeyACXDSSF",
+            "mangledName": "$s13LikeMindsFeed05TopicC7RequestC13setSearchTypeyACXDSSF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setEnableState",
+            "printedName": "setEnableState(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSelf",
+                "printedName": "Self"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed05TopicC7RequestC14setEnableStateyACXDSbF",
+            "mangledName": "$s13LikeMindsFeed05TopicC7RequestC14setEnableStateyACXDSbF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPage",
+            "printedName": "setPage(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSelf",
+                "printedName": "Self"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed05TopicC7RequestC7setPageyACXDSiF",
+            "mangledName": "$s13LikeMindsFeed05TopicC7RequestC7setPageyACXDSiF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPageSize",
+            "printedName": "setPageSize(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSelf",
+                "printedName": "Self"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed05TopicC7RequestC11setPageSizeyACXDSiF",
+            "mangledName": "$s13LikeMindsFeed05TopicC7RequestC11setPageSizeyACXDSiF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13LikeMindsFeed05TopicC7RequestC",
+        "mangledName": "$s13LikeMindsFeed05TopicC7RequestC",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "hasMissingDesignatedInitializers": true
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
@@ -17340,6 +17638,41 @@
             "declKind": "Func",
             "usr": "s:13LikeMindsFeed03GetC7RequestC8pageSizeyACSiF",
             "mangledName": "$s13LikeMindsFeed03GetC7RequestC8pageSizeyACSiF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "topics",
+            "printedName": "topics(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GetFeedRequest",
+                "printedName": "LikeMindsFeed.GetFeedRequest",
+                "usr": "s:13LikeMindsFeed03GetC7RequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed03GetC7RequestC6topicsyACSaySSGF",
+            "mangledName": "$s13LikeMindsFeed03GetC7RequestC6topicsyACSaySSGF",
             "moduleName": "LikeMindsFeed",
             "declAttributes": [
               "AccessControl"
@@ -20597,6 +20930,370 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "TopicFeedResponse",
+        "printedName": "TopicFeedResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "topics",
+            "printedName": "topics",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[LikeMindsFeed.TopicFeedResponse.TopicResponse]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[LikeMindsFeed.TopicFeedResponse.TopicResponse]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TopicResponse",
+                        "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse",
+                        "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed05TopicC8ResponseV6topicsSayAC0dE0VGSgvp",
+            "mangledName": "$s13LikeMindsFeed05TopicC8ResponseV6topicsSayAC0dE0VGSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[LikeMindsFeed.TopicFeedResponse.TopicResponse]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[LikeMindsFeed.TopicFeedResponse.TopicResponse]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TopicResponse",
+                            "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse",
+                            "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed05TopicC8ResponseV6topicsSayAC0dE0VGSgvg",
+                "mangledName": "$s13LikeMindsFeed05TopicC8ResponseV6topicsSayAC0dE0VGSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "TopicResponse",
+            "printedName": "TopicResponse",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "id",
+                "printedName": "id",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V2idSSSgvp",
+                "mangledName": "$s13LikeMindsFeed05TopicC8ResponseV0dE0V2idSSSgvp",
+                "moduleName": "LikeMindsFeed",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V2idSSSgvg",
+                    "mangledName": "$s13LikeMindsFeed05TopicC8ResponseV0dE0V2idSSSgvg",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "isEnabled",
+                "printedName": "isEnabled",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V9isEnabledSbSgvp",
+                "mangledName": "$s13LikeMindsFeed05TopicC8ResponseV0dE0V9isEnabledSbSgvp",
+                "moduleName": "LikeMindsFeed",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V9isEnabledSbSgvg",
+                    "mangledName": "$s13LikeMindsFeed05TopicC8ResponseV0dE0V9isEnabledSbSgvg",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "name",
+                "printedName": "name",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V4nameSSSgvp",
+                "mangledName": "$s13LikeMindsFeed05TopicC8ResponseV0dE0V4nameSSSgvp",
+                "moduleName": "LikeMindsFeed",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V4nameSSSgvg",
+                    "mangledName": "$s13LikeMindsFeed05TopicC8ResponseV0dE0V4nameSSSgvg",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TopicResponse",
+                    "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse",
+                    "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s13LikeMindsFeed05TopicC8ResponseV0dE0V4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V",
+            "mangledName": "$s13LikeMindsFeed05TopicC8ResponseV0dE0V",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "TopicFeedResponse",
+                "printedName": "LikeMindsFeed.TopicFeedResponse",
+                "usr": "s:13LikeMindsFeed05TopicC8ResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsFeed05TopicC8ResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13LikeMindsFeed05TopicC8ResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "LikeMindsFeed",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LikeMindsFeed05TopicC8ResponseV",
+        "mangledName": "$s13LikeMindsFeed05TopicC8ResponseV",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "LMFeedClient",
         "printedName": "LMFeedClient",
         "children": [
@@ -22547,6 +23244,67 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getTopicFeed",
+            "printedName": "getTopicFeed(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TopicFeedRequest",
+                "printedName": "LikeMindsFeed.TopicFeedRequest",
+                "usr": "s:13LikeMindsFeed05TopicC7RequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((LikeMindsFeed.LMResponse<LikeMindsFeed.TopicFeedResponse>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LikeMindsFeed.LMResponse<LikeMindsFeed.TopicFeedResponse>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LMResponse",
+                        "printedName": "LikeMindsFeed.LMResponse<LikeMindsFeed.TopicFeedResponse>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "TopicFeedResponse",
+                            "printedName": "LikeMindsFeed.TopicFeedResponse",
+                            "usr": "s:13LikeMindsFeed05TopicC8ResponseV"
+                          }
+                        ],
+                        "usr": "s:13LikeMindsFeed10LMResponseV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed12LMFeedClientC08getTopicC0yyAA0gC7RequestC_yAA10LMResponseVyAA0gC8ResponseVGcSgtF",
+            "mangledName": "$s13LikeMindsFeed12LMFeedClientC08getTopicC0yyAA0gC7RequestC_yAA10LMResponseVyAA0gC8ResponseVGcSgtF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -23894,6 +24652,142 @@
                 "declKind": "Accessor",
                 "usr": "s:13LikeMindsFeed4PostV7repliesSayAA7CommentVGSgvg",
                 "mangledName": "$s13LikeMindsFeed4PostV7repliesSayAA7CommentVGSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "topics",
+            "printedName": "topics",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed4PostV6topicsSaySSGSgvp",
+            "mangledName": "$s13LikeMindsFeed4PostV6topicsSaySSGSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed4PostV6topicsSaySSGSgvg",
+                "mangledName": "$s13LikeMindsFeed4PostV6topicsSaySSGSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tempId",
+            "printedName": "tempId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed4PostV6tempIdSSSgvp",
+            "mangledName": "$s13LikeMindsFeed4PostV6tempIdSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed4PostV6tempIdSSSgvg",
+                "mangledName": "$s13LikeMindsFeed4PostV6tempIdSSSgvg",
                 "moduleName": "LikeMindsFeed",
                 "implicit": true,
                 "accessorKind": "get"
@@ -27125,6 +28019,41 @@
           },
           {
             "kind": "Function",
+            "name": "tempId",
+            "printedName": "tempId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ReplyCommentRequest",
+                "printedName": "LikeMindsFeed.ReplyCommentRequest",
+                "usr": "s:13LikeMindsFeed19ReplyCommentRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed19ReplyCommentRequestC6tempIdyACSSSgF",
+            "mangledName": "$s13LikeMindsFeed19ReplyCommentRequestC6tempIdyACSSSgF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "encode",
             "printedName": "encode(to:)",
             "children": [
@@ -27381,12 +28310,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "[Swift.String : LikeMindsFeed.Topic]?",
+                "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Dictionary",
-                    "printedName": "[Swift.String : LikeMindsFeed.Topic]",
+                    "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -27396,9 +28325,9 @@
                       },
                       {
                         "kind": "TypeNominal",
-                        "name": "Topic",
-                        "printedName": "LikeMindsFeed.Topic",
-                        "usr": "s:13LikeMindsFeed5TopicV"
+                        "name": "TopicResponse",
+                        "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse",
+                        "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V"
                       }
                     ],
                     "usr": "s:SD"
@@ -27408,8 +28337,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:13LikeMindsFeed03GetC8ResponseV6topicsSDySSAA5TopicVGSgvp",
-            "mangledName": "$s13LikeMindsFeed03GetC8ResponseV6topicsSDySSAA5TopicVGSgvp",
+            "usr": "s:13LikeMindsFeed03GetC8ResponseV6topicsSDySSAA05TopiccE0V0gE0VGSgvp",
+            "mangledName": "$s13LikeMindsFeed03GetC8ResponseV6topicsSDySSAA05TopiccE0V0gE0VGSgvp",
             "moduleName": "LikeMindsFeed",
             "declAttributes": [
               "HasStorage",
@@ -27426,12 +28355,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "[Swift.String : LikeMindsFeed.Topic]?",
+                    "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]?",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "Dictionary",
-                        "printedName": "[Swift.String : LikeMindsFeed.Topic]",
+                        "printedName": "[Swift.String : LikeMindsFeed.TopicFeedResponse.TopicResponse]",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -27441,9 +28370,9 @@
                           },
                           {
                             "kind": "TypeNominal",
-                            "name": "Topic",
-                            "printedName": "LikeMindsFeed.Topic",
-                            "usr": "s:13LikeMindsFeed5TopicV"
+                            "name": "TopicResponse",
+                            "printedName": "LikeMindsFeed.TopicFeedResponse.TopicResponse",
+                            "usr": "s:13LikeMindsFeed05TopicC8ResponseV0dE0V"
                           }
                         ],
                         "usr": "s:SD"
@@ -27453,8 +28382,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:13LikeMindsFeed03GetC8ResponseV6topicsSDySSAA5TopicVGSgvg",
-                "mangledName": "$s13LikeMindsFeed03GetC8ResponseV6topicsSDySSAA5TopicVGSgvg",
+                "usr": "s:13LikeMindsFeed03GetC8ResponseV6topicsSDySSAA05TopiccE0V0gE0VGSgvg",
+                "mangledName": "$s13LikeMindsFeed03GetC8ResponseV6topicsSDySSAA05TopiccE0V0gE0VGSgvg",
                 "moduleName": "LikeMindsFeed",
                 "implicit": true,
                 "accessorKind": "get"
@@ -30653,6 +31582,66 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "dropdownSelectionLimit",
+            "printedName": "dropdownSelectionLimit",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed8QuestionV22dropdownSelectionLimitSiSgvp",
+            "mangledName": "$s13LikeMindsFeed8QuestionV22dropdownSelectionLimitSiSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed8QuestionV22dropdownSelectionLimitSiSgvg",
+                "mangledName": "$s13LikeMindsFeed8QuestionV22dropdownSelectionLimitSiSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init(from:)",
@@ -31308,6 +32297,336 @@
         "printedName": "AddCommentRequest",
         "children": [
           {
+            "kind": "Var",
+            "name": "text",
+            "printedName": "text",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed17AddCommentRequestC4textSSSgvp",
+            "mangledName": "$s13LikeMindsFeed17AddCommentRequestC4textSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed17AddCommentRequestC4textSSSgvg",
+                "mangledName": "$s13LikeMindsFeed17AddCommentRequestC4textSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed17AddCommentRequestC4textSSSgvs",
+                "mangledName": "$s13LikeMindsFeed17AddCommentRequestC4textSSSgvs",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed17AddCommentRequestC4textSSSgvM",
+                "mangledName": "$s13LikeMindsFeed17AddCommentRequestC4textSSSgvM",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "postId",
+            "printedName": "postId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed17AddCommentRequestC6postIdSSSgvp",
+            "mangledName": "$s13LikeMindsFeed17AddCommentRequestC6postIdSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed17AddCommentRequestC6postIdSSSgvg",
+                "mangledName": "$s13LikeMindsFeed17AddCommentRequestC6postIdSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed17AddCommentRequestC6postIdSSSgvs",
+                "mangledName": "$s13LikeMindsFeed17AddCommentRequestC6postIdSSSgvs",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed17AddCommentRequestC6postIdSSSgvM",
+                "mangledName": "$s13LikeMindsFeed17AddCommentRequestC6postIdSSSgvM",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tempId",
+            "printedName": "tempId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed17AddCommentRequestC6tempIdSSSgvp",
+            "mangledName": "$s13LikeMindsFeed17AddCommentRequestC6tempIdSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed17AddCommentRequestC6tempIdSSSgvg",
+                "mangledName": "$s13LikeMindsFeed17AddCommentRequestC6tempIdSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed17AddCommentRequestC6tempIdSSSgvs",
+                "mangledName": "$s13LikeMindsFeed17AddCommentRequestC6tempIdSSSgvs",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed17AddCommentRequestC6tempIdSSSgvM",
+                "mangledName": "$s13LikeMindsFeed17AddCommentRequestC6tempIdSSSgvM",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "builder",
             "printedName": "builder()",
@@ -31399,6 +32718,33 @@
             "declKind": "Func",
             "usr": "s:13LikeMindsFeed17AddCommentRequestC4textyACSSF",
             "mangledName": "$s13LikeMindsFeed17AddCommentRequestC4textyACSSF",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "tempId",
+            "printedName": "tempId(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AddCommentRequest",
+                "printedName": "LikeMindsFeed.AddCommentRequest",
+                "usr": "s:13LikeMindsFeed17AddCommentRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed17AddCommentRequestC6tempIdyACSSF",
+            "mangledName": "$s13LikeMindsFeed17AddCommentRequestC6tempIdyACSSF",
             "moduleName": "LikeMindsFeed",
             "declAttributes": [
               "AccessControl"
@@ -31720,28 +33066,28 @@
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/PostWidget.swift",
       "kind": "StringLiteral",
-      "offset": 916,
+      "offset": 942,
       "length": 9,
       "value": "\"og_tags\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/PostWidget.swift",
       "kind": "StringLiteral",
-      "offset": 986,
+      "offset": 1012,
       "length": 17,
       "value": "\"cover_image_url\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/PostWidget.swift",
       "kind": "StringLiteral",
-      "offset": 916,
+      "offset": 942,
       "length": 9,
       "value": "\"og_tags\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/PostWidget.swift",
       "kind": "StringLiteral",
-      "offset": 986,
+      "offset": 1012,
       "length": 17,
       "value": "\"cover_image_url\""
     },
@@ -31797,49 +33143,49 @@
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TaggingList\/GetTaggingListRequest.swift",
       "kind": "StringLiteral",
-      "offset": 213,
+      "offset": 194,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TaggingList\/GetTaggingListRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 240,
+      "offset": 221,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TaggingList\/GetTaggingListRequest.swift",
       "kind": "IntegerLiteral",
-      "offset": 266,
+      "offset": 247,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TaggingList\/GetTaggingListRequest.swift",
       "kind": "StringLiteral",
-      "offset": 977,
+      "offset": 958,
       "length": 13,
       "value": "\"search_name\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TaggingList\/GetTaggingListRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1033,
+      "offset": 1014,
       "length": 11,
       "value": "\"page_size\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TaggingList\/GetTaggingListRequest.swift",
       "kind": "StringLiteral",
-      "offset": 977,
+      "offset": 958,
       "length": 13,
       "value": "\"search_name\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TaggingList\/GetTaggingListRequest.swift",
       "kind": "StringLiteral",
-      "offset": 1033,
+      "offset": 1014,
       "length": 11,
       "value": "\"page_size\""
     },
@@ -31868,251 +33214,272 @@
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
       "offset": 4652,
+      "length": 56,
+      "value": "\"Response status: \""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4705,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 4707,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
+      "kind": "StringLiteral",
+      "offset": 4728,
       "length": 23,
       "value": "\"\n===Request End===\n\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4770,
+      "offset": 4846,
       "length": 26,
       "value": "\"\n===Response Start===\n\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 4869,
+      "offset": 4945,
       "length": 24,
       "value": "\"\n===Response End===\n\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5519,
+      "offset": 5595,
       "length": 26,
       "value": "\"\n===Response Start===\n\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5610,
+      "offset": 5686,
       "length": 22,
       "value": "\"Unable To Parse JSON\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5652,
+      "offset": 5728,
       "length": 24,
       "value": "\"\n===Response End===\n\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 5832,
+      "offset": 5908,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5877,
+      "offset": 5953,
       "length": 14,
       "value": "\"Invalid LTM!\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5936,
+      "offset": 6012,
       "length": 50,
       "value": "\"response - \""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 5985,
+      "offset": 6061,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 7543,
+      "offset": 7559,
       "length": 28,
       "value": "\"--------------------------\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 7591,
+      "offset": 7607,
       "length": 14,
       "value": "\"url - \""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 7604,
+      "offset": 7620,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 7625,
+      "offset": 7641,
       "length": 22,
       "value": "\"request - \""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 7646,
+      "offset": 7662,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 7667,
+      "offset": 7683,
       "length": 28,
       "value": "\"moduleName - \""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 7694,
+      "offset": 7710,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 7810,
+      "offset": 7826,
       "length": 84,
       "value": "\"http request body - \""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 7893,
+      "offset": 7909,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 7928,
+      "offset": 7944,
       "length": 22,
       "value": "\"headers - \""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 7949,
+      "offset": 7965,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 8032,
+      "offset": 8048,
       "length": 31,
       "value": "\"failureCallback - \""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 8062,
+      "offset": 8078,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 8643,
+      "offset": 8659,
       "length": 28,
       "value": "\"--------------------------\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "IntegerLiteral",
-      "offset": 8818,
+      "offset": 8834,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 8943,
+      "offset": 8959,
       "length": 14,
       "value": "\"Invalid LTM!\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 8994,
+      "offset": 9010,
       "length": 50,
       "value": "\"response - \""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 9043,
+      "offset": 9059,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 9428,
+      "offset": 9444,
       "length": 46,
       "value": "\"response - \""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 9473,
+      "offset": 9489,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 9586,
+      "offset": 9602,
       "length": 61,
       "value": "\"response - \""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 9646,
+      "offset": 9662,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 9771,
+      "offset": 9787,
       "length": 28,
       "value": "\"--------------------------\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 10191,
+      "offset": 10207,
       "length": 44,
       "value": "\"json error parsing - \""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 10225,
+      "offset": 10241,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/DataNetwork.swift",
       "kind": "StringLiteral",
-      "offset": 10234,
+      "offset": 10250,
       "length": 2,
       "value": "\"\""
     },
@@ -32623,742 +33990,826 @@
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4190,
+      "offset": 4245,
       "length": 14,
       "value": "\"sdk\/initiate\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4267,
+      "offset": 4322,
       "length": 14,
       "value": "\"user\/refresh\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4334,
+      "offset": 4389,
       "length": 18,
       "value": "\"user\/device\/push\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4407,
+      "offset": 4462,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4474,
+      "offset": 4529,
       "length": 16,
       "value": "\"sdk\/onboarding\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4560,
+      "offset": 4618,
       "length": 67,
       "value": "\"feed\/universal?page=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4596,
+      "offset": 4654,
       "length": 1,
       "value": "\"&page_size=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4626,
+      "offset": 4684,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4732,
+      "offset": 4797,
+      "length": 3,
+      "value": "\",\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 4868,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4759,
+      "offset": 4901,
+      "length": 24,
+      "value": "\"&topic_ids=[\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 4923,
+      "length": 1,
+      "value": "\"]\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 5111,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 5138,
       "length": 72,
       "value": "\"feed\/post\/\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4779,
+      "offset": 5158,
       "length": 1,
       "value": "\"?page=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4800,
+      "offset": 5179,
       "length": 1,
       "value": "\"&page_size=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4830,
+      "offset": 5209,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 4882,
+      "offset": 5261,
       "length": 11,
       "value": "\"feed\/post\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 5036,
+      "offset": 5415,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 5063,
+      "offset": 5442,
       "length": 93,
       "value": "\"feed\/post\/\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 5083,
+      "offset": 5462,
       "length": 1,
       "value": "\"\/comment\/\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 5104,
+      "offset": 5483,
       "length": 1,
       "value": "\"?page=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 5125,
+      "offset": 5504,
       "length": 1,
       "value": "\"&page_size=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 5155,
+      "offset": 5534,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 5264,
+      "offset": 5643,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 5291,
+      "offset": 5670,
       "length": 29,
       "value": "\"feed\/post\/\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 5311,
+      "offset": 5690,
       "length": 1,
       "value": "\"\/comment\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 5430,
+      "offset": 5809,
       "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 5457,
-      "length": 77,
-      "value": "\"feed\/post\/\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 5477,
-      "length": 1,
-      "value": "\"\/like?page=\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 5503,
-      "length": 1,
-      "value": "\"&page_size=\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 5533,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 5642,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 5669,
-      "length": 21,
-      "value": "\"feed\/post\/\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 5689,
-      "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
       "offset": 5836,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 5863,
-      "length": 42,
+      "length": 77,
       "value": "\"feed\/post\/\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 5883,
-      "length": 1,
-      "value": "\"\/comment\/\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 5904,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6011,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6038,
-      "length": 26,
-      "value": "\"feed\/post\/\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6058,
-      "length": 1,
-      "value": "\"\/like\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6208,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6235,
-      "length": 47,
-      "value": "\"feed\/post\/\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6255,
-      "length": 1,
-      "value": "\"\/comment\/\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6276,
-      "length": 1,
-      "value": "\"\/like\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6432,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6459,
-      "length": 98,
-      "value": "\"feed\/post\/\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6479,
-      "length": 1,
-      "value": "\"\/comment\/\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6500,
+      "offset": 5856,
       "length": 1,
       "value": "\"\/like?page=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 6526,
+      "offset": 5882,
       "length": 1,
       "value": "\"&page_size=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 6556,
+      "offset": 5912,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 6704,
+      "offset": 6021,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 6731,
-      "length": 50,
-      "value": "\"feed\/post\/\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6751,
-      "length": 1,
-      "value": "\"\/comment\/\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6772,
-      "length": 1,
-      "value": "\"\/comment\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6839,
-      "length": 24,
-      "value": "\"community\/member\/state\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6932,
-      "length": 46,
-      "value": "\"feed\/group?feedroom_id=\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 6977,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7028,
-      "length": 18,
-      "value": "\"community\/report\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7221,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7265,
-      "length": 38,
-      "value": "\"helper\/url?url=\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7302,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7409,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7436,
-      "length": 26,
-      "value": "\"feed\/post\/\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7456,
-      "length": 1,
-      "value": "\"\/save\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7512,
-      "length": 13,
-      "value": "\"user\/logout\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7595,
-      "length": 48,
-      "value": "\"community\/report\/tag?type=\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7640,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7642,
-      "length": 1,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7748,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7775,
-      "length": 25,
-      "value": "\"feed\/post\/\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7795,
-      "length": 1,
-      "value": "\"\/pin\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7906,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
-      "kind": "StringLiteral",
-      "offset": 7933,
+      "offset": 6048,
       "length": 21,
       "value": "\"feed\/post\/\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 7953,
+      "offset": 6068,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8098,
+      "offset": 6215,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8125,
+      "offset": 6242,
       "length": 42,
       "value": "\"feed\/post\/\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8145,
+      "offset": 6262,
       "length": 1,
       "value": "\"\/comment\/\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8166,
+      "offset": 6283,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8250,
+      "offset": 6390,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 6417,
+      "length": 26,
+      "value": "\"feed\/post\/\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 6437,
+      "length": 1,
+      "value": "\"\/like\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 6587,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 6614,
+      "length": 47,
+      "value": "\"feed\/post\/\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 6634,
+      "length": 1,
+      "value": "\"\/comment\/\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 6655,
+      "length": 1,
+      "value": "\"\/like\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 6811,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 6838,
+      "length": 98,
+      "value": "\"feed\/post\/\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 6858,
+      "length": 1,
+      "value": "\"\/comment\/\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 6879,
+      "length": 1,
+      "value": "\"\/like?page=\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 6905,
+      "length": 1,
+      "value": "\"&page_size=\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 6935,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7083,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7110,
+      "length": 50,
+      "value": "\"feed\/post\/\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7130,
+      "length": 1,
+      "value": "\"\/comment\/\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7151,
+      "length": 1,
+      "value": "\"\/comment\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7218,
+      "length": 24,
+      "value": "\"community\/member\/state\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7311,
+      "length": 46,
+      "value": "\"feed\/group?feedroom_id=\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7356,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7407,
+      "length": 18,
+      "value": "\"community\/report\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7600,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7644,
+      "length": 38,
+      "value": "\"helper\/url?url=\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7681,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7788,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7815,
+      "length": 26,
+      "value": "\"feed\/post\/\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7835,
+      "length": 1,
+      "value": "\"\/save\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7891,
+      "length": 13,
+      "value": "\"user\/logout\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 7974,
+      "length": 48,
+      "value": "\"community\/report\/tag?type=\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8019,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 8021,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 8127,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 8154,
+      "length": 25,
+      "value": "\"feed\/post\/\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 8174,
+      "length": 1,
+      "value": "\"\/pin\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 8285,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 8312,
+      "length": 21,
+      "value": "\"feed\/post\/\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 8332,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 8477,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 8504,
+      "length": 42,
+      "value": "\"feed\/post\/\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 8524,
+      "length": 1,
+      "value": "\"\/comment\/\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 8545,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 8629,
       "length": 66,
       "value": "\"community\/tag?page_size=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8294,
+      "offset": 8673,
       "length": 1,
       "value": "\"&page=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8315,
+      "offset": 8694,
       "length": 35,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8349,
+      "offset": 8728,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8354,
+      "offset": 8733,
       "length": 36,
       "value": "\"&search_name=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8389,
+      "offset": 8768,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8501,
+      "offset": 8880,
       "length": 71,
       "value": "\"feed\/user\/activity?page=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8541,
+      "offset": 8920,
       "length": 1,
       "value": "\"&page_size=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8571,
+      "offset": 8950,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8702,
+      "offset": 9081,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8729,
+      "offset": 9108,
       "length": 44,
       "value": "\"feed\/user\/activity\/\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8762,
+      "offset": 9141,
       "length": 1,
       "value": "\"\/mark_read\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8846,
+      "offset": 9225,
       "length": 33,
       "value": "\"feed\/user\/activity\/unread_count\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8949,
+      "offset": 9328,
       "length": 69,
       "value": "\"community\/member?page=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 8987,
+      "offset": 9366,
       "length": 1,
       "value": "\"&page_size=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 9017,
+      "offset": 9396,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 9120,
+      "offset": 9499,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 9170,
+      "offset": 9549,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 9196,
+      "offset": 9575,
       "length": 119,
       "value": "\"community\/member\/search?page=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 9241,
+      "offset": 9620,
       "length": 1,
       "value": "\"&page_size=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 9271,
+      "offset": 9650,
       "length": 1,
       "value": "\"&search_type=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 9297,
+      "offset": 9676,
       "length": 1,
       "value": "\"&search=\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 9314,
+      "offset": 9693,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 11034,
+      "offset": 9766,
+      "length": 63,
+      "value": "\"feed\/topic?page=\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 9798,
+      "length": 1,
+      "value": "\"&page_size=\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 9828,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 9917,
+      "length": 18,
+      "value": "\"&is_enabled=true\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 10052,
+      "length": 53,
+      "value": "\"&search=\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 10070,
+      "length": 1,
+      "value": "\"&search_type=\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 10104,
+      "length": 69,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 10172,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
+      "kind": "StringLiteral",
+      "offset": 11988,
       "length": 7,
       "value": "\"token\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 11060,
+      "offset": 12014,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "Dictionary",
-      "offset": 11126,
+      "offset": 12080,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 13037,
+      "offset": 13921,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 13200,
+      "offset": 14084,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 13437,
+      "offset": 14322,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 13588,
+      "offset": 14473,
       "length": 2,
       "value": "\"\""
     },
@@ -33379,156 +34830,170 @@
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 544,
+      "offset": 571,
       "length": 5,
       "value": "\"_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 572,
+      "offset": 599,
       "length": 9,
       "value": "\"post_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 604,
+      "offset": 631,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 643,
+      "offset": 670,
       "length": 17,
       "value": "\"deleted_by_uuid\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 685,
+      "offset": 712,
       "length": 11,
       "value": "\"is_edited\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 720,
+      "offset": 747,
       "length": 10,
       "value": "\"is_liked\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 760,
+      "offset": 787,
       "length": 16,
       "value": "\"comments_count\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 802,
+      "offset": 829,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 860,
+      "offset": 887,
       "length": 13,
       "value": "\"likes_count\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 899,
+      "offset": 926,
       "length": 12,
       "value": "\"menu_items\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 970,
+      "offset": 997,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 544,
+      "offset": 1032,
+      "length": 9,
+      "value": "\"temp_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
+      "kind": "StringLiteral",
+      "offset": 571,
       "length": 5,
       "value": "\"_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 572,
+      "offset": 599,
       "length": 9,
       "value": "\"post_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 604,
+      "offset": 631,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 643,
+      "offset": 670,
       "length": 17,
       "value": "\"deleted_by_uuid\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 685,
+      "offset": 712,
       "length": 11,
       "value": "\"is_edited\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 720,
+      "offset": 747,
       "length": 10,
       "value": "\"is_liked\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 760,
+      "offset": 787,
       "length": 16,
       "value": "\"comments_count\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 802,
+      "offset": 829,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 860,
+      "offset": 887,
       "length": 13,
       "value": "\"likes_count\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 899,
+      "offset": 926,
       "length": 12,
       "value": "\"menu_items\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
       "kind": "StringLiteral",
-      "offset": 970,
+      "offset": 997,
       "length": 12,
       "value": "\"updated_at\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Response\/Comment.swift",
+      "kind": "StringLiteral",
+      "offset": 1032,
+      "length": 9,
+      "value": "\"temp_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Request\/GetCommentRequest.swift",
@@ -34702,30 +36167,44 @@
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Request\/EditPostRequest.swift",
       "kind": "StringLiteral",
-      "offset": 457,
+      "offset": 483,
       "length": 9,
       "value": "\"post_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Request\/EditPostRequest.swift",
       "kind": "StringLiteral",
-      "offset": 497,
+      "offset": 524,
       "length": 19,
       "value": "\"on_behalf_of_uuid\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Request\/EditPostRequest.swift",
       "kind": "StringLiteral",
-      "offset": 457,
+      "offset": 567,
+      "length": 11,
+      "value": "\"topic_ids\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Request\/EditPostRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 483,
       "length": 9,
       "value": "\"post_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Request\/EditPostRequest.swift",
       "kind": "StringLiteral",
-      "offset": 497,
+      "offset": 524,
       "length": 19,
       "value": "\"on_behalf_of_uuid\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Request\/EditPostRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 567,
+      "length": 11,
+      "value": "\"topic_ids\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/RegisterDevice\/RegisterDeviceRequest.swift",
@@ -34891,16 +36370,44 @@
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Request\/AddPostRequest.swift",
       "kind": "StringLiteral",
-      "offset": 432,
+      "offset": 508,
       "length": 19,
       "value": "\"on_behalf_of_uuid\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Request\/AddPostRequest.swift",
       "kind": "StringLiteral",
-      "offset": 432,
+      "offset": 551,
+      "length": 11,
+      "value": "\"topic_ids\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Request\/AddPostRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 586,
+      "length": 9,
+      "value": "\"temp_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Request\/AddPostRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 508,
       "length": 19,
       "value": "\"on_behalf_of_uuid\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Request\/AddPostRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 551,
+      "length": 11,
+      "value": "\"topic_ids\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Request\/AddPostRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 586,
+      "length": 9,
+      "value": "\"temp_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Network\/LMLogger.swift",
@@ -34922,6 +36429,34 @@
       "offset": 691,
       "length": 13,
       "value": "\"activity_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TopicFeed\/Request\/TopicFeedRequest.swift",
+      "kind": "BooleanLiteral",
+      "offset": 175,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TopicFeed\/Request\/TopicFeedRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 234,
+      "length": 6,
+      "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TopicFeed\/Request\/TopicFeedRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 261,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TopicFeed\/Request\/TopicFeedRequest.swift",
+      "kind": "IntegerLiteral",
+      "offset": 287,
+      "length": 2,
+      "value": "10"
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/PreferenceManager\/PersistentPreferences.swift",
@@ -35110,7 +36645,7 @@
       "kind": "StringLiteral",
       "offset": 337,
       "length": 3,
-      "value": "\"6\""
+      "value": "\"7\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/UniversalFeed\/Request\/GetFeedRequest.swift",
@@ -35128,19 +36663,40 @@
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/UniversalFeed\/Request\/GetFeedRequest.swift",
+      "kind": "Array",
+      "offset": 259,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/UniversalFeed\/Request\/GetFeedRequest.swift",
       "kind": "StringLiteral",
-      "offset": 760,
+      "offset": 913,
       "length": 11,
       "value": "\"page_size\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/UniversalFeed\/Request\/GetFeedRequest.swift",
       "kind": "StringLiteral",
-      "offset": 760,
+      "offset": 948,
+      "length": 11,
+      "value": "\"topic_ids\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/UniversalFeed\/Request\/GetFeedRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 913,
       "length": 11,
       "value": "\"page_size\""
     },
     {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/UniversalFeed\/Request\/GetFeedRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 948,
+      "length": 11,
+      "value": "\"topic_ids\""
+    },
+    {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/PostLike\/Response\/LikeUsers.swift",
       "kind": "StringLiteral",
       "offset": 278,
@@ -35741,6 +37297,34 @@
       "offset": 2076,
       "length": 11,
       "value": "\"sub_title\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TopicFeed\/Response\/TopicFeedResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 429,
+      "length": 5,
+      "value": "\"_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TopicFeed\/Response\/TopicFeedResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 465,
+      "length": 12,
+      "value": "\"is_enabled\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TopicFeed\/Response\/TopicFeedResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 429,
+      "length": 5,
+      "value": "\"_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/TopicFeed\/Response\/TopicFeedResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 465,
+      "length": 12,
+      "value": "\"is_enabled\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedClient.swift",
@@ -35773,212 +37357,226 @@
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 693,
+      "offset": 757,
       "length": 5,
       "value": "\"_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 753,
+      "offset": 817,
       "length": 16,
       "value": "\"comments_count\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 797,
+      "offset": 861,
       "length": 14,
       "value": "\"community_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 837,
+      "offset": 901,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 874,
+      "offset": 938,
       "length": 11,
       "value": "\"is_pinned\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 909,
+      "offset": 973,
       "length": 10,
       "value": "\"is_saved\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 943,
+      "offset": 1007,
       "length": 10,
       "value": "\"is_liked\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 978,
+      "offset": 1042,
       "length": 11,
       "value": "\"is_edited\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1016,
+      "offset": 1080,
       "length": 13,
       "value": "\"likes_count\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1055,
+      "offset": 1119,
       "length": 12,
       "value": "\"menu_items\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1120,
+      "offset": 1184,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1155,
+      "offset": 1219,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1194,
+      "offset": 1258,
       "length": 17,
       "value": "\"deleted_by_uuid\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1237,
+      "offset": 1301,
       "length": 12,
       "value": "\"is_deleted\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1278,
+      "offset": 1342,
       "length": 15,
       "value": "\"delete_reason\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 693,
+      "offset": 1441,
+      "length": 9,
+      "value": "\"temp_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 757,
       "length": 5,
       "value": "\"_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 753,
+      "offset": 817,
       "length": 16,
       "value": "\"comments_count\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 797,
+      "offset": 861,
       "length": 14,
       "value": "\"community_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 837,
+      "offset": 901,
       "length": 12,
       "value": "\"created_at\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 874,
+      "offset": 938,
       "length": 11,
       "value": "\"is_pinned\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 909,
+      "offset": 973,
       "length": 10,
       "value": "\"is_saved\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 943,
+      "offset": 1007,
       "length": 10,
       "value": "\"is_liked\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 978,
+      "offset": 1042,
       "length": 11,
       "value": "\"is_edited\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1016,
+      "offset": 1080,
       "length": 13,
       "value": "\"likes_count\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1055,
+      "offset": 1119,
       "length": 12,
       "value": "\"menu_items\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1120,
+      "offset": 1184,
       "length": 12,
       "value": "\"updated_at\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1155,
+      "offset": 1219,
       "length": 9,
       "value": "\"user_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1194,
+      "offset": 1258,
       "length": 17,
       "value": "\"deleted_by_uuid\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1237,
+      "offset": 1301,
       "length": 12,
       "value": "\"is_deleted\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
       "kind": "StringLiteral",
-      "offset": 1278,
+      "offset": 1342,
       "length": 15,
       "value": "\"delete_reason\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Response\/Post.swift",
+      "kind": "StringLiteral",
+      "offset": 1441,
+      "length": 9,
+      "value": "\"temp_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/ReportTags\/GetReportTagResponse.swift",
@@ -36305,30 +37903,44 @@
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/ReplyOnComment\/ReplyCommentRequest.swift",
       "kind": "StringLiteral",
-      "offset": 924,
+      "offset": 1075,
       "length": 9,
       "value": "\"post_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/ReplyOnComment\/ReplyCommentRequest.swift",
       "kind": "StringLiteral",
-      "offset": 977,
+      "offset": 1128,
       "length": 12,
       "value": "\"comment_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/ReplyOnComment\/ReplyCommentRequest.swift",
       "kind": "StringLiteral",
-      "offset": 924,
+      "offset": 1163,
+      "length": 9,
+      "value": "\"temp_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/ReplyOnComment\/ReplyCommentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1075,
       "length": 9,
       "value": "\"post_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/ReplyOnComment\/ReplyCommentRequest.swift",
       "kind": "StringLiteral",
-      "offset": 977,
+      "offset": 1128,
       "length": 12,
       "value": "\"comment_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/ReplyOnComment\/ReplyCommentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 1163,
+      "length": 9,
+      "value": "\"temp_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Post\/Request\/SavePostRequest.swift",
@@ -36746,140 +38358,154 @@
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2187,
+      "offset": 2231,
       "length": 14,
       "value": "\"community_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2233,
+      "offset": 2277,
       "length": 18,
       "value": "\"directory_fields\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2276,
+      "offset": 2320,
       "length": 11,
       "value": "\"is_hidden\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2312,
+      "offset": 2356,
       "length": 11,
       "value": "\"member_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2350,
+      "offset": 2394,
       "length": 13,
       "value": "\"question_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2393,
+      "offset": 2437,
       "length": 16,
       "value": "\"question_title\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2465,
+      "offset": 2509,
       "length": 11,
       "value": "\"image_url\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2187,
+      "offset": 2559,
+      "length": 26,
+      "value": "\"dropdown_selection_limit\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
+      "kind": "StringLiteral",
+      "offset": 2231,
       "length": 14,
       "value": "\"community_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2233,
+      "offset": 2277,
       "length": 18,
       "value": "\"directory_fields\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2276,
+      "offset": 2320,
       "length": 11,
       "value": "\"is_hidden\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2312,
+      "offset": 2356,
       "length": 11,
       "value": "\"member_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2350,
+      "offset": 2394,
       "length": 13,
       "value": "\"question_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2393,
+      "offset": 2437,
       "length": 16,
       "value": "\"question_title\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2465,
+      "offset": 2509,
       "length": 11,
       "value": "\"image_url\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2703,
+      "offset": 2559,
+      "length": 26,
+      "value": "\"dropdown_selection_limit\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
+      "kind": "StringLiteral",
+      "offset": 2812,
       "length": 14,
       "value": "\"community_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2742,
+      "offset": 2851,
       "length": 11,
       "value": "\"member_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2780,
+      "offset": 2889,
       "length": 13,
       "value": "\"question_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2703,
+      "offset": 2812,
       "length": 14,
       "value": "\"community_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2742,
+      "offset": 2851,
       "length": 11,
       "value": "\"member_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/CoreFeed\/InitiateUser\/User.swift",
       "kind": "StringLiteral",
-      "offset": 2780,
+      "offset": 2889,
       "length": 13,
       "value": "\"question_id\""
     },
@@ -37026,16 +38652,30 @@
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Request\/AddCommentRequest.swift",
       "kind": "StringLiteral",
-      "offset": 498,
+      "offset": 543,
       "length": 9,
       "value": "\"post_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Request\/AddCommentRequest.swift",
       "kind": "StringLiteral",
-      "offset": 498,
+      "offset": 593,
+      "length": 9,
+      "value": "\"temp_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Request\/AddCommentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 543,
       "length": 9,
       "value": "\"post_id\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Comments\/Request\/AddCommentRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 593,
+      "length": 9,
+      "value": "\"temp_id\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/PreferenceManager\/PreferenceConstants.swift",
