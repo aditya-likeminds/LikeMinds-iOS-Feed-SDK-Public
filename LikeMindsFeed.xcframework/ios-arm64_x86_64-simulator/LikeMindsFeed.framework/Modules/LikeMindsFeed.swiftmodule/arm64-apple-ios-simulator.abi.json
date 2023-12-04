@@ -6082,6 +6082,74 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCommunityConfiguration",
+            "printedName": "getCommunityConfiguration(_:withModuleName:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GetCommunityConfigurationRequest",
+                "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((LikeMindsFeed.LMResponse<LikeMindsFeed.GetCommunityConfigurationResponse>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LikeMindsFeed.LMResponse<LikeMindsFeed.GetCommunityConfigurationResponse>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LMResponse",
+                        "printedName": "LikeMindsFeed.LMResponse<LikeMindsFeed.GetCommunityConfigurationResponse>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GetCommunityConfigurationResponse",
+                            "printedName": "LikeMindsFeed.GetCommunityConfigurationResponse",
+                            "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV"
+                          }
+                        ],
+                        "usr": "s:13LikeMindsFeed10LMResponseV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed26LMFeedClientServiceRequestC25getCommunityConfiguration_14withModuleName_yAA03GetijG0C_SSyAA10LMResponseVyAA0niJ8ResponseVGcSgtFZ",
+            "mangledName": "$s13LikeMindsFeed26LMFeedClientServiceRequestC25getCommunityConfiguration_14withModuleName_yAA03GetijG0C_SSyAA10LMResponseVyAA0niJ8ResponseVGcSgtFZ",
+            "moduleName": "LikeMindsFeed",
+            "static": true,
+            "declAttributes": [
+              "Final"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -21086,6 +21154,57 @@
               },
               {
                 "kind": "Var",
+                "name": "getCommunityConfiguration",
+                "printedName": "getCommunityConfiguration",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LikeMindsFeed.ServiceAPIRequest.NetworkPath.Type) -> (LikeMindsFeed.GetCommunityConfigurationRequest) -> LikeMindsFeed.ServiceAPIRequest.NetworkPath",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(LikeMindsFeed.GetCommunityConfigurationRequest) -> LikeMindsFeed.ServiceAPIRequest.NetworkPath",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NetworkPath",
+                            "printedName": "LikeMindsFeed.ServiceAPIRequest.NetworkPath",
+                            "usr": "s:13LikeMindsFeed17ServiceAPIRequestV11NetworkPathO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GetCommunityConfigurationRequest",
+                            "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest",
+                            "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC"
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LikeMindsFeed.ServiceAPIRequest.NetworkPath.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NetworkPath",
+                            "printedName": "LikeMindsFeed.ServiceAPIRequest.NetworkPath",
+                            "usr": "s:13LikeMindsFeed17ServiceAPIRequestV11NetworkPathO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13LikeMindsFeed17ServiceAPIRequestV11NetworkPathO25getCommunityConfigurationyAeA03GetiJ7RequestCcAEmF",
+                "mangledName": "$s13LikeMindsFeed17ServiceAPIRequestV11NetworkPathO25getCommunityConfigurationyAeA03GetiJ7RequestCcAEmF",
+                "moduleName": "LikeMindsFeed",
+                "fixedbinaryorder": 34
+              },
+              {
+                "kind": "Var",
                 "name": "apiURL",
                 "printedName": "apiURL",
                 "children": [
@@ -22256,6 +22375,633 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GetCommunityConfigurationRequest",
+        "printedName": "GetCommunityConfigurationRequest",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "configurationTypes",
+            "printedName": "configurationTypes",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC18configurationTypesSaySSGSgvp",
+            "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC18configurationTypesSaySSGSgvp",
+            "moduleName": "LikeMindsFeed",
+            "isOpen": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC18configurationTypesSaySSGSgvg",
+                "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC18configurationTypesSaySSGSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[Swift.String]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC18configurationTypesSaySSGSgvs",
+                "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC18configurationTypesSaySSGSgvs",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC18configurationTypesSaySSGSgvM",
+                "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC18configurationTypesSaySSGSgvM",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "isOpen": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "builder",
+            "printedName": "builder()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GetCommunityConfigurationRequest",
+                "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC7builderACyFZ",
+            "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC7builderACyFZ",
+            "moduleName": "LikeMindsFeed",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "build",
+            "printedName": "build()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DynamicSelf",
+                "printedName": "Self"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC5buildACXDyF",
+            "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC5buildACXDyF",
+            "moduleName": "LikeMindsFeed",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CodingKeys",
+            "printedName": "CodingKeys",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "configurationTypes",
+                "printedName": "configurationTypes",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LikeMindsFeed.GetCommunityConfigurationRequest.CodingKeys.Type) -> LikeMindsFeed.GetCommunityConfigurationRequest.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest.CodingKeys",
+                        "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest.CodingKeys",
+                            "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO18configurationTypesyA2EmF",
+                "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO18configurationTypesyA2EmF",
+                "moduleName": "LikeMindsFeed",
+                "fixedbinaryorder": 0
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest.CodingKeys?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest.CodingKeys",
+                        "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO8rawValueAESgSS_tcfc",
+                "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO8rawValueAESgSS_tcfc",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO8rawValueSSvp",
+                "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO8rawValueSSvp",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO8rawValueSSvg",
+                    "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO8rawValueSSvg",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "stringValue",
+                "printedName": "stringValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO11stringValueSSvp",
+                "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO11stringValueSSvp",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO11stringValueSSvg",
+                    "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO11stringValueSSvg",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(stringValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest.CodingKeys?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest.CodingKeys",
+                        "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO11stringValueAESgSS_tcfc",
+                "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO11stringValueAESgSS_tcfc",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "intValue",
+                "printedName": "intValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO8intValueSiSgvp",
+                "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO8intValueSiSgvp",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO8intValueSiSgvg",
+                    "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO8intValueSiSgvg",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(intValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest.CodingKeys?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest.CodingKeys",
+                        "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO8intValueAESgSi_tcfc",
+                "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO8intValueAESgSi_tcfc",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO",
+            "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC10CodingKeysO",
+            "moduleName": "LikeMindsFeed",
+            "enumRawTypeName": "String",
+            "isEnumExhaustive": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CodingKey",
+                "printedName": "CodingKey",
+                "usr": "s:s9CodingKeyP",
+                "mangledName": "$ss9CodingKeyP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "configurationTypes",
+            "printedName": "configurationTypes(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GetCommunityConfigurationRequest",
+                "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC18configurationTypesyACSaySSGF",
+            "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC18configurationTypesyACSaySSGF",
+            "moduleName": "LikeMindsFeed",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC6encode2toys7Encoder_p_tKF",
+            "moduleName": "LikeMindsFeed",
+            "implicit": true,
+            "isOpen": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC",
+        "mangledName": "$s13LikeMindsFeed32GetCommunityConfigurationRequestC",
+        "moduleName": "LikeMindsFeed",
+        "isOpen": true,
+        "declAttributes": [
+          "AccessControl"
         ],
         "hasMissingDesignatedInitializers": true,
         "conformances": [
@@ -67021,6 +67767,68 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getCommunityConfiguration",
+            "printedName": "getCommunityConfiguration(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "GetCommunityConfigurationRequest",
+                "printedName": "LikeMindsFeed.GetCommunityConfigurationRequest",
+                "usr": "s:13LikeMindsFeed32GetCommunityConfigurationRequestC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "((LikeMindsFeed.LMResponse<LikeMindsFeed.GetCommunityConfigurationResponse>) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LikeMindsFeed.LMResponse<LikeMindsFeed.GetCommunityConfigurationResponse>) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LMResponse",
+                        "printedName": "LikeMindsFeed.LMResponse<LikeMindsFeed.GetCommunityConfigurationResponse>",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "GetCommunityConfigurationResponse",
+                            "printedName": "LikeMindsFeed.GetCommunityConfigurationResponse",
+                            "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV"
+                          }
+                        ],
+                        "usr": "s:13LikeMindsFeed10LMResponseV"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed12LMFeedClientC25getCommunityConfigurationyyAA03GetgH7RequestC_yAA10LMResponseVyAA0igH8ResponseVGcSgtF",
+            "mangledName": "$s13LikeMindsFeed12LMFeedClientC25getCommunityConfigurationyyAA03GetgH7RequestC_yAA10LMResponseVyAA0igH8ResponseVGcSgtF",
+            "moduleName": "LikeMindsFeed",
+            "isOpen": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -71571,6 +72379,1714 @@
             "printedName": "Decodable",
             "usr": "s:Se",
             "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "GetCommunityConfigurationResponse",
+        "printedName": "GetCommunityConfigurationResponse",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "communityConfigurations",
+            "printedName": "communityConfigurations",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[LikeMindsFeed.CommunityConfiguration]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[LikeMindsFeed.CommunityConfiguration]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CommunityConfiguration",
+                        "printedName": "LikeMindsFeed.CommunityConfiguration",
+                        "usr": "s:13LikeMindsFeed22CommunityConfigurationV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV23communityConfigurationsSayAA0eF0VGSgvp",
+            "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV23communityConfigurationsSayAA0eF0VGSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "[LikeMindsFeed.CommunityConfiguration]?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[LikeMindsFeed.CommunityConfiguration]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CommunityConfiguration",
+                            "printedName": "LikeMindsFeed.CommunityConfiguration",
+                            "usr": "s:13LikeMindsFeed22CommunityConfigurationV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV23communityConfigurationsSayAA0eF0VGSgvg",
+                "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV23communityConfigurationsSayAA0eF0VGSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "CodingKeys",
+            "printedName": "CodingKeys",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "communityConfigurations",
+                "printedName": "communityConfigurations",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(LikeMindsFeed.GetCommunityConfigurationResponse.CodingKeys.Type) -> LikeMindsFeed.GetCommunityConfigurationResponse.CodingKeys",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "LikeMindsFeed.GetCommunityConfigurationResponse.CodingKeys",
+                        "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "LikeMindsFeed.GetCommunityConfigurationResponse.CodingKeys.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "LikeMindsFeed.GetCommunityConfigurationResponse.CodingKeys",
+                            "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO23communityConfigurationsyA2EmF",
+                "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO23communityConfigurationsyA2EmF",
+                "moduleName": "LikeMindsFeed",
+                "fixedbinaryorder": 0
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(rawValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LikeMindsFeed.GetCommunityConfigurationResponse.CodingKeys?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "LikeMindsFeed.GetCommunityConfigurationResponse.CodingKeys",
+                        "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO8rawValueAESgSS_tcfc",
+                "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO8rawValueAESgSS_tcfc",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "rawValue",
+                "printedName": "rawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO8rawValueSSvp",
+                "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO8rawValueSSvp",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO8rawValueSSvg",
+                    "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO8rawValueSSvg",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "stringValue",
+                "printedName": "stringValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO11stringValueSSvp",
+                "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO11stringValueSSvp",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO11stringValueSSvg",
+                    "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO11stringValueSSvg",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(stringValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LikeMindsFeed.GetCommunityConfigurationResponse.CodingKeys?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "LikeMindsFeed.GetCommunityConfigurationResponse.CodingKeys",
+                        "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO11stringValueAESgSS_tcfc",
+                "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO11stringValueAESgSS_tcfc",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "intValue",
+                "printedName": "intValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO8intValueSiSgvp",
+                "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO8intValueSiSgvp",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO8intValueSiSgvg",
+                    "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO8intValueSiSgvg",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(intValue:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LikeMindsFeed.GetCommunityConfigurationResponse.CodingKeys?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CodingKeys",
+                        "printedName": "LikeMindsFeed.GetCommunityConfigurationResponse.CodingKeys",
+                        "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO8intValueAESgSi_tcfc",
+                "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO8intValueAESgSi_tcfc",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "init_kind": "Designated"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO",
+            "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV10CodingKeysO",
+            "moduleName": "LikeMindsFeed",
+            "enumRawTypeName": "String",
+            "isEnumExhaustive": true,
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              },
+              {
+                "kind": "Conformance",
+                "name": "RawRepresentable",
+                "printedName": "RawRepresentable",
+                "children": [
+                  {
+                    "kind": "TypeWitness",
+                    "name": "RawValue",
+                    "printedName": "RawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:SY",
+                "mangledName": "$sSY"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CodingKey",
+                "printedName": "CodingKey",
+                "usr": "s:s9CodingKeyP",
+                "mangledName": "$ss9CodingKeyP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomDebugStringConvertible",
+                "printedName": "CustomDebugStringConvertible",
+                "usr": "s:s28CustomDebugStringConvertibleP",
+                "mangledName": "$ss28CustomDebugStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "CustomStringConvertible",
+                "printedName": "CustomStringConvertible",
+                "usr": "s:s23CustomStringConvertibleP",
+                "mangledName": "$ss23CustomStringConvertibleP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(communityConfigurations:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GetCommunityConfigurationResponse",
+                "printedName": "LikeMindsFeed.GetCommunityConfigurationResponse",
+                "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[LikeMindsFeed.CommunityConfiguration]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[LikeMindsFeed.CommunityConfiguration]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CommunityConfiguration",
+                        "printedName": "LikeMindsFeed.CommunityConfiguration",
+                        "usr": "s:13LikeMindsFeed22CommunityConfigurationV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV23communityConfigurationsACSayAA0eF0VGSg_tcfc",
+            "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV23communityConfigurationsACSayAA0eF0VGSg_tcfc",
+            "moduleName": "LikeMindsFeed",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GetCommunityConfigurationResponse",
+                "printedName": "LikeMindsFeed.GetCommunityConfigurationResponse",
+                "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "LikeMindsFeed",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LikeMindsFeed33GetCommunityConfigurationResponseV",
+        "mangledName": "$s13LikeMindsFeed33GetCommunityConfigurationResponseV",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "CommunityConfiguration",
+        "printedName": "CommunityConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "type",
+            "printedName": "type",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed22CommunityConfigurationV4typeSSSgvp",
+            "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV4typeSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed22CommunityConfigurationV4typeSSSgvg",
+                "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV4typeSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "value",
+            "printedName": "value",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LikeMindsFeed.CommunityConfiguration.Value?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Value",
+                    "printedName": "LikeMindsFeed.CommunityConfiguration.Value",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed22CommunityConfigurationV5valueAC5ValueVSgvp",
+            "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5valueAC5ValueVSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "LikeMindsFeed.CommunityConfiguration.Value?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Value",
+                        "printedName": "LikeMindsFeed.CommunityConfiguration.Value",
+                        "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed22CommunityConfigurationV5valueAC5ValueVSgvg",
+                "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5valueAC5ValueVSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:13LikeMindsFeed22CommunityConfigurationV11descriptionSSSgvp",
+            "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV11descriptionSSSgvp",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:13LikeMindsFeed22CommunityConfigurationV11descriptionSSSgvg",
+                "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV11descriptionSSSgvg",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "Value",
+            "printedName": "Value",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "post",
+                "printedName": "post",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV4postSSSgvp",
+                "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV4postSSSgvp",
+                "moduleName": "LikeMindsFeed",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.String?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV4postSSSgvg",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV4postSSSgvg",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "maxVideoSize",
+                "printedName": "maxVideoSize",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV12maxVideoSizeSiSgvp",
+                "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV12maxVideoSizeSiSgvp",
+                "moduleName": "LikeMindsFeed",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV12maxVideoSizeSiSgvg",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV12maxVideoSizeSiSgvg",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "maxImageSize",
+                "printedName": "maxImageSize",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV12maxImageSizeSiSgvp",
+                "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV12maxImageSizeSiSgvp",
+                "moduleName": "LikeMindsFeed",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV12maxImageSizeSiSgvg",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV12maxImageSizeSiSgvg",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "widgetsEnabled",
+                "printedName": "widgetsEnabled",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV14widgetsEnabledSbSgvp",
+                "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV14widgetsEnabledSbSgvp",
+                "moduleName": "LikeMindsFeed",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Bool?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Bool",
+                            "printedName": "Swift.Bool",
+                            "usr": "s:Sb"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV14widgetsEnabledSbSgvg",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV14widgetsEnabledSbSgvg",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeDecl",
+                "name": "CodingKeys",
+                "printedName": "CodingKeys",
+                "children": [
+                  {
+                    "kind": "Var",
+                    "name": "post",
+                    "printedName": "post",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(LikeMindsFeed.CommunityConfiguration.Value.CodingKeys.Type) -> LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                            "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CodingKeys",
+                                "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                                "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO4postyA2GmF",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO4postyA2GmF",
+                    "moduleName": "LikeMindsFeed",
+                    "fixedbinaryorder": 0
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "maxVideoSize",
+                    "printedName": "maxVideoSize",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(LikeMindsFeed.CommunityConfiguration.Value.CodingKeys.Type) -> LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                            "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CodingKeys",
+                                "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                                "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO12maxVideoSizeyA2GmF",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO12maxVideoSizeyA2GmF",
+                    "moduleName": "LikeMindsFeed",
+                    "fixedbinaryorder": 1
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "maxImageSize",
+                    "printedName": "maxImageSize",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(LikeMindsFeed.CommunityConfiguration.Value.CodingKeys.Type) -> LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                            "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CodingKeys",
+                                "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                                "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO12maxImageSizeyA2GmF",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO12maxImageSizeyA2GmF",
+                    "moduleName": "LikeMindsFeed",
+                    "fixedbinaryorder": 2
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "widgetsEnabled",
+                    "printedName": "widgetsEnabled",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(LikeMindsFeed.CommunityConfiguration.Value.CodingKeys.Type) -> LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                            "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Metatype",
+                            "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys.Type",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "CodingKeys",
+                                "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                                "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "declKind": "EnumElement",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO14widgetsEnabledyA2GmF",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO14widgetsEnabledyA2GmF",
+                    "moduleName": "LikeMindsFeed",
+                    "fixedbinaryorder": 3
+                  },
+                  {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(rawValue:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                            "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO03rawF0AGSgSS_tcfc",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO03rawF0AGSgSS_tcfc",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "init_kind": "Designated"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "rawValue",
+                    "printedName": "rawValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO03rawF0SSvp",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO03rawF0SSvp",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO03rawF0SSvg",
+                        "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO03rawF0SSvg",
+                        "moduleName": "LikeMindsFeed",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "stringValue",
+                    "printedName": "stringValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO06stringF0SSvp",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO06stringF0SSvp",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO06stringF0SSvg",
+                        "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO06stringF0SSvg",
+                        "moduleName": "LikeMindsFeed",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(stringValue:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                            "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO06stringF0AGSgSS_tcfc",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO06stringF0AGSgSS_tcfc",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "init_kind": "Designated"
+                  },
+                  {
+                    "kind": "Var",
+                    "name": "intValue",
+                    "printedName": "intValue",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Var",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO03intF0SiSgvp",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO03intF0SiSgvp",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "accessors": [
+                      {
+                        "kind": "Accessor",
+                        "name": "Get",
+                        "printedName": "Get()",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.Int?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ],
+                        "declKind": "Accessor",
+                        "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO03intF0SiSgvg",
+                        "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO03intF0SiSgvg",
+                        "moduleName": "LikeMindsFeed",
+                        "implicit": true,
+                        "accessorKind": "get"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "Constructor",
+                    "name": "init",
+                    "printedName": "init(intValue:)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "CodingKeys",
+                            "printedName": "LikeMindsFeed.CommunityConfiguration.Value.CodingKeys",
+                            "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Constructor",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO03intF0AGSgSi_tcfc",
+                    "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO03intF0AGSgSi_tcfc",
+                    "moduleName": "LikeMindsFeed",
+                    "implicit": true,
+                    "init_kind": "Designated"
+                  }
+                ],
+                "declKind": "Enum",
+                "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO",
+                "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV10CodingKeysO",
+                "moduleName": "LikeMindsFeed",
+                "enumRawTypeName": "String",
+                "isEnumExhaustive": true,
+                "conformances": [
+                  {
+                    "kind": "Conformance",
+                    "name": "Equatable",
+                    "printedName": "Equatable",
+                    "usr": "s:SQ",
+                    "mangledName": "$sSQ"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Hashable",
+                    "printedName": "Hashable",
+                    "usr": "s:SH",
+                    "mangledName": "$sSH"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "RawRepresentable",
+                    "printedName": "RawRepresentable",
+                    "children": [
+                      {
+                        "kind": "TypeWitness",
+                        "name": "RawValue",
+                        "printedName": "RawValue",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ],
+                    "usr": "s:SY",
+                    "mangledName": "$sSY"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "CodingKey",
+                    "printedName": "CodingKey",
+                    "usr": "s:s9CodingKeyP",
+                    "mangledName": "$ss9CodingKeyP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "CustomDebugStringConvertible",
+                    "printedName": "CustomDebugStringConvertible",
+                    "usr": "s:s28CustomDebugStringConvertibleP",
+                    "mangledName": "$ss28CustomDebugStringConvertibleP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "CustomStringConvertible",
+                    "printedName": "CustomStringConvertible",
+                    "usr": "s:s23CustomStringConvertibleP",
+                    "mangledName": "$ss23CustomStringConvertibleP"
+                  },
+                  {
+                    "kind": "Conformance",
+                    "name": "Sendable",
+                    "printedName": "Sendable",
+                    "usr": "s:s8SendableP",
+                    "mangledName": "$ss8SendableP"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(post:maxVideoSize:maxImageSize:widgetsEnabled:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Value",
+                    "printedName": "LikeMindsFeed.CommunityConfiguration.Value",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Bool?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV4post12maxVideoSize0h5ImageJ014widgetsEnabledAESSSg_SiSgAKSbSgtcfc",
+                "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV4post12maxVideoSize0h5ImageJ014widgetsEnabledAESSSg_SiSgAKSbSgtcfc",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Value",
+                    "printedName": "LikeMindsFeed.CommunityConfiguration.Value",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV6encode2toys7Encoder_p_tKF",
+                "moduleName": "LikeMindsFeed",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV",
+            "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV5ValueV",
+            "moduleName": "LikeMindsFeed",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(type:value:description:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CommunityConfiguration",
+                "printedName": "LikeMindsFeed.CommunityConfiguration",
+                "usr": "s:13LikeMindsFeed22CommunityConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "LikeMindsFeed.CommunityConfiguration.Value?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Value",
+                    "printedName": "LikeMindsFeed.CommunityConfiguration.Value",
+                    "usr": "s:13LikeMindsFeed22CommunityConfigurationV5ValueV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsFeed22CommunityConfigurationV4type5value11descriptionACSSSg_AC5ValueVSgAGtcfc",
+            "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV4type5value11descriptionACSSSg_AC5ValueVSgAGtcfc",
+            "moduleName": "LikeMindsFeed",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CommunityConfiguration",
+                "printedName": "LikeMindsFeed.CommunityConfiguration",
+                "usr": "s:13LikeMindsFeed22CommunityConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:13LikeMindsFeed22CommunityConfigurationV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "LikeMindsFeed",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:13LikeMindsFeed22CommunityConfigurationV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV6encode2toys7Encoder_p_tKF",
+            "moduleName": "LikeMindsFeed",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:13LikeMindsFeed22CommunityConfigurationV",
+        "mangledName": "$s13LikeMindsFeed22CommunityConfigurationV",
+        "moduleName": "LikeMindsFeed",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
           }
         ]
       },
@@ -90554,33 +93070,19 @@
         "usr": "s:10Foundation4DataV",
         "mangledName": "$s10Foundation4DataV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
         "declAttributes": [
-          "Frozen"
+          "Frozen",
+          "Available",
+          "Available",
+          "Available",
+          "Available"
         ],
         "isExternal": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSData",
-                    "printedName": "Foundation.NSData",
-                    "usr": "c:objc(cs)NSData"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -90973,24 +93475,25 @@
           },
           {
             "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomReflectable",
-            "printedName": "CustomReflectable",
-            "usr": "s:s17CustomReflectableP",
-            "mangledName": "$ss17CustomReflectableP"
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSData",
+                    "printedName": "Foundation.NSData",
+                    "usr": "c:objc(cs)NSData"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -91013,6 +93516,27 @@
             ],
             "usr": "s:s21_ObjectiveCBridgeableP",
             "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomReflectable",
+            "printedName": "CustomReflectable",
+            "usr": "s:s17CustomReflectableP",
+            "mangledName": "$ss17CustomReflectableP"
           },
           {
             "kind": "Conformance",
@@ -91147,6 +93671,16 @@
         "usr": "s:10Foundation3URLV",
         "mangledName": "$s10Foundation3URLV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
           {
@@ -92055,36 +94589,31 @@
         "usr": "s:10Foundation4DateV",
         "mangledName": "$s10Foundation4DateV",
         "moduleName": "Foundation",
+        "intro_Macosx": "10.10",
+        "intro_iOS": "8.0",
+        "intro_tvOS": "9.0",
+        "intro_watchOS": "2.0",
+        "declAttributes": [
+          "Available",
+          "Available",
+          "Available",
+          "Available"
+        ],
         "isExternal": true,
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "ReferenceConvertible",
-            "printedName": "ReferenceConvertible",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ReferenceType",
-                "printedName": "ReferenceType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSDate",
-                    "printedName": "Foundation.NSDate",
-                    "usr": "c:objc(cs)NSDate"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:10Foundation20ReferenceConvertibleP",
-            "mangledName": "$s10Foundation20ReferenceConvertibleP"
-          },
           {
             "kind": "Conformance",
             "name": "Comparable",
             "printedName": "Comparable",
             "usr": "s:SL",
             "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
           },
           {
             "kind": "Conformance",
@@ -92099,35 +94628,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Strideable",
-            "printedName": "Strideable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "Stride",
-                "printedName": "Stride",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:Sx",
-            "mangledName": "$sSx"
           },
           {
             "kind": "Conformance",
@@ -92149,6 +94649,42 @@
             "printedName": "CustomReflectable",
             "usr": "s:s17CustomReflectableP",
             "mangledName": "$ss17CustomReflectableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ReferenceConvertible",
+            "printedName": "ReferenceConvertible",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ReferenceType",
+                "printedName": "ReferenceType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDate",
+                    "printedName": "Foundation.NSDate",
+                    "usr": "c:objc(cs)NSDate"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:10Foundation20ReferenceConvertibleP",
+            "mangledName": "$s10Foundation20ReferenceConvertibleP"
           },
           {
             "kind": "Conformance",
@@ -92181,17 +94717,25 @@
           },
           {
             "kind": "Conformance",
-            "name": "Decodable",
-            "printedName": "Decodable",
-            "usr": "s:Se",
-            "mangledName": "$sSe"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Encodable",
-            "printedName": "Encodable",
-            "usr": "s:SE",
-            "mangledName": "$sSE"
+            "name": "Strideable",
+            "printedName": "Strideable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "Stride",
+                "printedName": "Stride",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:Sx",
+            "mangledName": "$sSx"
           }
         ]
       },
@@ -92877,30 +95421,44 @@
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 13921,
+      "offset": 14145,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 14084,
+      "offset": 14308,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 14322,
+      "offset": 14546,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/LMFeedService\/ServiceConfiguration.swift",
       "kind": "StringLiteral",
-      "offset": 14473,
+      "offset": 14697,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Community\/GetCommunityConfigurationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 553,
+      "length": 21,
+      "value": "\"configuration_types\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Community\/GetCommunityConfigurationRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 553,
+      "length": 21,
+      "value": "\"configuration_types\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/PostLike\/Response\/GetPostLikeResponse.swift",
@@ -94517,7 +97075,7 @@
       "kind": "StringLiteral",
       "offset": 337,
       "length": 3,
-      "value": "\"7\""
+      "value": "\"8\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/UniversalFeed\/Request\/GetFeedRequest.swift",
@@ -95484,6 +98042,62 @@
       "offset": 476,
       "length": 6,
       "value": "\"name\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Community\/GetCommunityConfigurationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 348,
+      "length": 26,
+      "value": "\"community_configurations\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Community\/GetCommunityConfigurationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 348,
+      "length": 26,
+      "value": "\"community_configurations\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Community\/GetCommunityConfigurationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 855,
+      "length": 16,
+      "value": "\"max_video_size\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Community\/GetCommunityConfigurationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 904,
+      "length": 16,
+      "value": "\"max_image_size\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Community\/GetCommunityConfigurationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 955,
+      "length": 17,
+      "value": "\"widgets_enabled\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Community\/GetCommunityConfigurationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 855,
+      "length": 16,
+      "value": "\"max_video_size\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Community\/GetCommunityConfigurationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 904,
+      "length": 16,
+      "value": "\"max_image_size\""
+    },
+    {
+      "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Model\/Community\/GetCommunityConfigurationResponse.swift",
+      "kind": "StringLiteral",
+      "offset": 955,
+      "length": 17,
+      "value": "\"widgets_enabled\""
     },
     {
       "filePath": "\/Users\/pushpendra\/likeminds_workspace\/LikeMinds-Feed-SDK\/Feed-SDK\/LikeMindsFeed\/Extensions\/Date+Extension.swift",
