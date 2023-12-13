@@ -1,9 +1,12 @@
 name: Publish to Cocoapods
 
-on:
-  repository_dispatch:
-    types:
-      - cocoapods-deploy
+# on:
+#   repository_dispatch:
+#     types:
+#       - cocoapods-deploy
+on: 
+  push: 
+    branches: master
 
 jobs:
   publish:
