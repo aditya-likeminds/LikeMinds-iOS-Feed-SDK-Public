@@ -22,6 +22,8 @@ jobs:
 
       - name: Download and unzip artifact and push to master
         run: |
+          pwd
+
           # Get the latest workflow run
           curl -s -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: Bearer ${{ secrets.PAT }}" \
@@ -45,6 +47,8 @@ jobs:
       
           unzip -qo '*.zip'
 
+          pwd
+          
           ls -al
       
       - run: | 
