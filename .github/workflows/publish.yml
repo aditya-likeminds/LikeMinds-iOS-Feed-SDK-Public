@@ -18,7 +18,7 @@ jobs:
         with:
             token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Download and unzip artifact
+      - name: Download and unzip artifact and push to master
         run: |
           # Get the latest workflow run
           curl -s -H "Accept: application/vnd.github.v3+json" \
@@ -44,5 +44,16 @@ jobs:
           unzip -qo '*.zip'
 
           ls -al
+
+          mv LikeMindsFeed.podspec LikeMindsFeed.xcframework .
+
+          # Configure Git
+          git config --global user.name "$(git log -n 1 --pretty=format:%an)"
+          git config --global user.email "$(git log -n 1 --pretty=format:%ae)"
+
+          # Add, commit, and push changes
+          git add LikeMindsFeed.podspec LikeMindsFeed.xcframework
+          git commit -m "Update artifacts from GitHub Actions run ${RUN_ID}"
+          git push origin master
 
       - run: ls -lR
