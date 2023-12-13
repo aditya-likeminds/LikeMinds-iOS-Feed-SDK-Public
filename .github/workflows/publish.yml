@@ -47,7 +47,10 @@ jobs:
 
           ls -al
       
-      - run: yes | (echo "yes" && while read -r; do echo "yes"; done) | cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework . > /dev/null 2>&1
+      - run: cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework .
+        env:
+          PAT: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: |
           ls -al
@@ -60,3 +63,6 @@ jobs:
           git add LikeMindsFeed.podspec LikeMindsFeed.xcframework
           git commit -m "Update artifacts from GitHub Actions run ${RUN_ID}"
           git push origin master
+        env:
+          PAT: ${{ secrets.PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
