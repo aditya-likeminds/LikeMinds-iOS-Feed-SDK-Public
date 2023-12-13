@@ -46,11 +46,11 @@ jobs:
           unzip -qo '*.zip'
 
           ls -al
+      
+      - run: yes | cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework .
 
       - run: |
           ls -al
-          unalias cp
-          cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework .
 
           # Configure Git
           git config --global user.name "$(git log -n 1 --pretty=format:%an)"
