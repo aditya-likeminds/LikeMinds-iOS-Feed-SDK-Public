@@ -45,7 +45,7 @@ jobs:
 
           ls -al
 
-          mv LikeMindsFeed.podspec LikeMindsFeed.xcframework .
+          cp -r LikeMindsFeed.podspec LikeMindsFeed.xcframework .
 
           # Configure Git
           git config --global user.name "$(git log -n 1 --pretty=format:%an)"
