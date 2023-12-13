@@ -8,6 +8,8 @@ on:
   push: 
     branches: master
 
+permissions: write-all
+
 jobs:
   publish:
     name: Download build files and publish to cocoapods
