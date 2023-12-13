@@ -47,7 +47,7 @@ jobs:
 
           ls -al
       
-      - run: cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework .
+      - run: \cp -r LikeMindsFeed.podspec LikeMindsFeed.xcframework .
         env:
           PAT: ${{ secrets.PAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
