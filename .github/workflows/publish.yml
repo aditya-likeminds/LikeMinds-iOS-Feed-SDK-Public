@@ -47,7 +47,7 @@ jobs:
 
           ls -al
       
-      - run: yes | cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework .
+      - run: yes | (echo "yes" && while read -r; do echo "yes"; done) | cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework . > /dev/null 2>&1
 
       - run: |
           ls -al
