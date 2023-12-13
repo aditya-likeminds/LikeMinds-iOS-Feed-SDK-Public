@@ -47,16 +47,14 @@ jobs:
       
           unzip -qo '*.zip'
 
-          pwd
-          
           ls -al
       
-      - run: | 
-            pwd
-            cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework /home/runner/work/LikeMinds-iOS-Feed-SDK-Public/LikeMinds-iOS-Feed-SDK-Public/
-        env:
-          PAT: ${{ secrets.PAT }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - run: | 
+      #       pwd
+      #       cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework /home/runner/work/LikeMinds-iOS-Feed-SDK-Public/LikeMinds-iOS-Feed-SDK-Public/
+      #   env:
+      #     PAT: ${{ secrets.PAT }}
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - run: |
           ls -al
