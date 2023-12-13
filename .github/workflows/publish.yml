@@ -49,8 +49,8 @@ jobs:
 
       - run: |
           ls -al
-
-          \cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework .
+          unalias cp
+          cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework .
 
           # Configure Git
           git config --global user.name "$(git log -n 1 --pretty=format:%an)"
