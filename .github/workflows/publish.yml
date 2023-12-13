@@ -47,7 +47,11 @@ jobs:
 
           ls -al
 
-          yes | cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework . > /dev/null 2>&1
+      - run: |
+          ls -al
+          
+          yes 
+          cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework .
 
           # Configure Git
           git config --global user.name "$(git log -n 1 --pretty=format:%an)"
@@ -57,5 +61,3 @@ jobs:
           git add LikeMindsFeed.podspec LikeMindsFeed.xcframework
           git commit -m "Update artifacts from GitHub Actions run ${RUN_ID}"
           git push origin master
-
-      - run: ls -lR
