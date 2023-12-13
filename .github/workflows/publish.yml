@@ -34,6 +34,7 @@ jobs:
           # will download only those artifacts with a name that matches this regular expression
           # https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions
           name: xcframework-build
+          commit: 2ea334b60fa3697d56cd7a067fd13defea518cd3
           # Optional, a directory where to extract artifact(s), defaults to the current directory
           # path: extract_here
           # Optional, defaults to current repo
