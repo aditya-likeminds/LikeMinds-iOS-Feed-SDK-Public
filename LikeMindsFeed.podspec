@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "LikeMindsFeed"
-  spec.version      = "1.7.1"
-  spec.summary      = "LikeMindsFeed"
+  spec.name         = "LikeMindsFeed.podspec"
+  spec.version      = "1.5.0"
+  spec.summary      = "LikeMindsFeed sdk  description of LikeMindsFeed.podspec."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
