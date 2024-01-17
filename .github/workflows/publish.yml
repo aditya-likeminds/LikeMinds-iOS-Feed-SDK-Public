@@ -6,24 +6,22 @@ name: Publish to Cocoapods
 #       - cocoapods-deploy
 on: 
   push: 
-    branches: master
+    branches: [master]
 
 permissions: write-all
 
 jobs:
   publish:
     name: Download build files and publish to cocoapods
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Check out Git repository
         uses: actions/checkout@v3
         with:
             token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Download and unzip artifact and push to master
+      - name: Download and unzip artifacts
         run: |
-          pwd
-
           # Get the latest workflow run
           curl -s -H "Accept: application/vnd.github.v3+json" \
             -H "Authorization: Bearer ${{ secrets.PAT }}" \
@@ -47,26 +45,46 @@ jobs:
       
           unzip -qo '*.zip'
 
-          ls -al
-      
-      # - run: | 
-      #       pwd
-      #       cp -rf LikeMindsFeed.podspec LikeMindsFeed.xcframework /home/runner/work/LikeMinds-iOS-Feed-SDK-Public/LikeMinds-iOS-Feed-SDK-Public/
-      #   env:
-      #     PAT: ${{ secrets.PAT }}
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          rm -f artifact_info.json run_info.json xcframework-build.zip
 
-      - run: |
-          ls -al
-
+      - name: Push artifacts to master
+        run: |
           # Configure Git
           git config --global user.name "$(git log -n 1 --pretty=format:%an)"
           git config --global user.email "$(git log -n 1 --pretty=format:%ae)"
 
-          # Add, commit, and push changes
-          git add LikeMindsFeed.podspec LikeMindsFeed.xcframework
-          git commit -m "Update artifacts from GitHub Actions run ${RUN_ID}"
-          git push origin master
+          # Check if there are changes
+          if [[ -n $(git status -s) ]]; then
+            # Add, commit, and push changes
+            git add LikeMindsFeed.podspec LikeMindsFeed.xcframework
+            git commit -m "Update artifacts from GitHub Actions"
+            git push origin master
+          else
+            echo "No changes to commit."
+          fi
         env:
           PAT: ${{ secrets.PAT }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Push Git Tag and create release
+        run: |
+          # Push a Git tag with the new version
+          export current_version=$(grep 'spec.version' LikeMindsFeed.podspec | awk -F '"' '/spec.version/{print $2}' | tr -d '\n' | sed 's/[^0-9.]//g; s/\..$//')
+          
+          # Check if the tag already exists
+          if git rev-parse "$current_version" >/dev/null 2>&1; then
+            echo "Tag $current_version already exists. Skipping tag and release creation."
+          else
+            git tag -a "$current_version" -m "Version $current_version"
+            git push origin "$current_version"
+            
+            # Create github release
+            gh release create "v$(git describe --tags --abbrev=0)" --generate-notes
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: cocoapods test
+        run: pod spec lint --verbose
+        env:
+          COCOAPODS_TRUNK_TOKEN: ${{ secrets.COCOAPODS_TRUNK_TOKEN }}
