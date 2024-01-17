@@ -69,7 +69,7 @@ jobs:
       - name: Push Git Tag and create release
         run: |
           # Push a Git tag with the new version
-          export current_version=$(grep 'spec.version' LikeMindsFeed.podspec | awk -F '"' '/spec.version/{print $2}' | tr -d '\n' | sed 's/[^0-9.]//g; s/\..$//')
+          export current_version=$(grep 'spec.version' LikeMindsFeed.podspec | awk -F '"' '/spec.version/{print $2}' | tr -d '\n' | sed 's/[^0-9.]//g; s/\.$//')
           
           # Check if the tag already exists
           if git rev-parse "$current_version" >/dev/null 2>&1; then
